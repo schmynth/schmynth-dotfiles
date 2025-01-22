@@ -24,10 +24,10 @@ ln -sf $SCRIPT_PATH/.vimrc /home/$USER/.vimrc
 
 echo "linking hyprland config file..."
 mkdir -p /home/$USER/.config/hypr
-ln -sf $SCRIPT_PATH/.config/hypr/hyprland.conf /home/$USER/.conf/hypr/hyprland.conf
+ln -sf $SCRIPT_PATH/.config/hypr/hyprland.conf /home/$USER/.config/hypr/hyprland.conf
 
 echo "linking hyprlock config file..."
-ln -sf $SCRIPT_PATH/.config/hypr/hyprlock.conf /home/$USER/.conf/hypr/hyprlock.conf
+ln -sf $SCRIPT_PATH/.config/hypr/hyprlock.conf /home/$USER/.config/hypr/hyprlock.conf
 
 echo "linking waybar config files..."
 mkdir -p /home/$USER/.config/waybar
