@@ -23,7 +23,7 @@ echo "linking .vimrc..."
 ln -sf $SCRIPT_PATH/.vimrc /home/$USER/.vimrc
 
 echo "linking hyprland config file..."
-mkdir -p /home/$USER/hypr
+mkdir -p /home/$USER/.config/hypr
 ln -sf $SCRIPT_PATH/.config/hypr/hyprland.conf /home/$USER/.conf/hypr/hyprland.conf
 
 echo "linking hyprlock config file..."
@@ -37,7 +37,7 @@ ln -sf $SCRIPT_PATH/.config/waybar/runrofi.sh /home/$USER/.config/waybar/runrofi
 ln -sf $SCRIPT_PATH/.config/waybar/style.css /home/$USER/.config/waybar/style.css
 
 echo "linking waypaper config file..."
-mkdir -p /home/$USER/waypaper
+mkdir -p /home/$USER/.config/waypaper
 ln -sf $SCRIPT_PATH/.config/waypaper/config.ini /home/$USER/.config/waypaper/config.ini
 
 echo "copying wallpaper folder..."
@@ -45,11 +45,11 @@ cp -r $SCRIPT_PATH/wallpapers/ /home/$USER/Bilder/wallpapers
 
 echo "linking kitty config file..."
 mkdir -p /home/$USER/.config/kitty
-ln -s $SCRIPT_PATH/.config/kitty/kitty.conf /home/$USER/.config/kitty/kitty.conf
+ln -sf $SCRIPT_PATH/.config/kitty/kitty.conf /home/$USER/.config/kitty/kitty.conf
 
 echo "linking rofi config file..."
 mkdir -p /home/$USER/.config/rofi
-ln -s $SCRIPT_PATH/.config/rofi/config.rasi /home/$USER/.config/rofi/config.rasi
+ln -sf $SCRIPT_PATH/.config/rofi/config.rasi /home/$USER/.config/rofi/config.rasi
 
 echo "linking scripts..."
-ln -s $SCRIPT_PATH/.scripts /home/$USER/.scripts
+ln -sf $SCRIPT_PATH/.scripts /home/$USER/.scripts
