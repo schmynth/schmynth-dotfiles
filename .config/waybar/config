@@ -1,10 +1,11 @@
 {
+
     "layer": "top",
     "position": "top",
     "height": 20,
     "modules-left": ["custom/appmenu", "hyprland/workspaces","wlr/taskbar"],
     "modules-center": ["clock"],
-    "modules-right": ["group/hardware", "hyprland/language", "network", "custom/exit", "pulseaudio"],
+    "modules-right": ["group/hardware", "hyprland/language", "network", "pulseaudio", "custom/exit"],
     "custom/appmenu": {
         	"format": "Menu {icon}",
         	"format-icon": "󰻀",
@@ -114,7 +115,14 @@
              "memory",
          ]
      },
-
+     // Power Menu                                                                              
+     "custom/exit": {                                                                           
+         "format": "",                                                                         
+         "tooltip-format": "Powermenu",                                                         
+         "on-click": "wlogout -b 4",                                                            
+         "tooltip": false                                                                       
+     },                                                                                         
+       
     "network": {
         	"tooltip": true,
         	"rotate": 0,
