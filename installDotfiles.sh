@@ -40,9 +40,9 @@ ln -sf $SCRIPT_PATH/.config/waybar/modules.json /home/$USER/.config/waybar/modul
 ln -sf $SCRIPT_PATH/.config/waybar/runrofi.sh /home/$USER/.config/waybar/runrofi.sh
 ln -sf $SCRIPT_PATH/.config/waybar/style.css /home/$USER/.config/waybar/style.css
 
-echo "linking waypaper config file..."
-mkdir -p /home/$USER/.config/waypaper
-ln -sf $SCRIPT_PATH/.config/waypaper/config.ini /home/$USER/.config/waypaper/config.ini
+# echo "linking waypaper config file..."
+# mkdir -p /home/$USER/.config/waypaper
+# ln -sf $SCRIPT_PATH/.config/waypaper/config.ini /home/$USER/.config/waypaper/config.ini
 
 echo "copying wallpaper folder..."
 cp -r $SCRIPT_PATH/wallpapers/ /home/$USER/Bilder/wallpapers
