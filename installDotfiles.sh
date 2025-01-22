@@ -17,29 +17,28 @@ SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 set -x #echo on
 
 echo "linking .zshrc..."
-ln -s $SCRIPT_PATH/.zshrc /home/$USER/.zshrc
+ln -sf $SCRIPT_PATH/.zshrc /home/$USER/.zshrc
 
 echo "linking .vimrc..."
-ln -s $SCRIPT_PATH/.vimrc /home/$USER/.vimrc
+ln -sf $SCRIPT_PATH/.vimrc /home/$USER/.vimrc
 
 echo "linking hyprland config file..."
 mkdir -p /home/$USER/hypr
-rm /home/$USER/hypr/hyprland.conf
-ln -s $SCRIPT_PATH/.config/hypr/hyprland.conf /home/$USER/.conf/hypr/hyprland.conf
+ln -sf $SCRIPT_PATH/.config/hypr/hyprland.conf /home/$USER/.conf/hypr/hyprland.conf
 
 echo "linking hyprlock config file..."
-ln -s $SCRIPT_PATH/.config/hypr/hyprlock.conf /home/$USER/.conf/hypr/hyprlock.conf
+ln -sf $SCRIPT_PATH/.config/hypr/hyprlock.conf /home/$USER/.conf/hypr/hyprlock.conf
 
 echo "linking waybar config files..."
 mkdir -p /home/$USER/.config/waybar
-ln -s $SCRIPT_PATH/.config/waybar/config /home/$USER/.config/waybar/config
-ln -s $SCRIPT_PATH/.config/waybar/modules.json /home/$USER/.config/waybar/modules.json
-ln -s $SCRIPT_PATH/.config/waybar/runrofi.sh /home/$USER/.config/waybar/runrofi.sh
-ln -s $SCRIPT_PATH/.config/waybar/style.css /home/$USER/.config/waybar/style.css
+ln -sf $SCRIPT_PATH/.config/waybar/config /home/$USER/.config/waybar/config
+ln -sf $SCRIPT_PATH/.config/waybar/modules.json /home/$USER/.config/waybar/modules.json
+ln -sf $SCRIPT_PATH/.config/waybar/runrofi.sh /home/$USER/.config/waybar/runrofi.sh
+ln -sf $SCRIPT_PATH/.config/waybar/style.css /home/$USER/.config/waybar/style.css
 
 echo "linking waypaper config file..."
 mkdir -p /home/$USER/waypaper
-ln -s $SCRIPT_PATH/.config/waypaper/config.ini /home/$USER/.config/waypaper/config.ini
+ln -sf $SCRIPT_PATH/.config/waypaper/config.ini /home/$USER/.config/waypaper/config.ini
 
 echo "copying wallpaper folder..."
 cp -r $SCRIPT_PATH/wallpapers/ /home/$USER/Bilder/wallpapers
