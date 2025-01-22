@@ -1,0 +1,47 @@
+{
+    // "layer": "top", // Waybar at top layer
+    
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    
+    "height": 10, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+
+    // Load Modules
+    "include": [
+        "~/.config/ml4w/settings/waybar-quicklinks.json",
+        "~/.config/waybar/modules.json"
+    ],    
+    "modules-left": [
+	    "custom/appmenu": {
+        	"format": "Menu {icon}",
+        	"format-icon": "󰻀",
+        	"rotate": 0,
+        	"on-click": "~/.config/waybar/runwofi.sh"
+    	},
+        "wlr/taskbar": {
+        	"format": "{icon}",
+        	"tooltip": true,
+        	"tooltip-format": "{title}",
+        	"on-click": "activate",
+        	"on-click-middle": "close",
+        	"active-first": true
+   	    },
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "mpd", 
+        "pulseaudio", 
+        "network", 
+        "cpu", 
+        "memory", 
+        "clock", 
+        "tray",
+        "custom/exit"
+    ]
+}
