@@ -8,6 +8,7 @@
 # waybar
 # waypaper
 # kitty
+# .alacritty.toml
 #
 # currently tracked folders:
 # wallpapers (copied), scripts (linked)
@@ -21,6 +22,9 @@ ln -sf $SCRIPT_PATH/.zshrc /home/$USER/.zshrc
 
 echo "linking .vimrc..."
 ln -sf $SCRIPT_PATH/.vimrc /home/$USER/.vimrc
+
+echo "linking .alacritty.toml..."
+ln -sf $SCRIPT_PATH/.alacritty.toml /home/$USER/.alacritty.toml
 
 echo "linking hyprland config file..."
 mkdir -p /home/$USER/.config/hypr
