@@ -24,13 +24,14 @@ ln -s $SCRIPT_PATH/.vimrc /home/$USER/.vimrc
 
 echo "linking hyprland config file..."
 mkdir -p /home/$USER/hypr
+rm /home/$USER/hypr/hyprland.conf
 ln -s $SCRIPT_PATH/.config/hypr/hyprland.conf /home/$USER/.conf/hypr/hyprland.conf
 
 echo "linking hyprlock config file..."
 ln -s $SCRIPT_PATH/.config/hypr/hyprlock.conf /home/$USER/.conf/hypr/hyprlock.conf
 
 echo "linking waybar config files..."
-mkdir -p /home/$USER/waybar
+mkdir -p /home/$USER/.config/waybar
 ln -s $SCRIPT_PATH/.config/waybar/config /home/$USER/.config/waybar/config
 ln -s $SCRIPT_PATH/.config/waybar/modules.json /home/$USER/.config/waybar/modules.json
 ln -s $SCRIPT_PATH/.config/waybar/runrofi.sh /home/$USER/.config/waybar/runrofi.sh
