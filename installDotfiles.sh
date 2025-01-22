@@ -1,12 +1,16 @@
 #!/bin/bash
 
 # this script installs the schmynth dotfiles
-# currently tracked config files are:
+# currently linked config files are:
 # .zshrc
 # hyprland
 # hyprlock
 # waybar
 # waypaper
+# kitty
+#
+# currently tracked folders:
+# wallpapers (copied), scripts (linked)
 
 # find full path of script:
 SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -25,6 +29,9 @@ ln -s $SCRIPT_PATH/.config/hypr/hyprlock.conf /home/$USER/.conf/hypr/hyprlock.co
 echo "linking waybar config files..."
 mkdir -p /home/$USER/waybar
 ln -s $SCRIPT_PATH/.config/waybar/config /home/$USER/.config/waybar/config
+ln -s $SCRIPT_PATH/.config/waybar/modules.json /home/$USER/.config/waybar/modules.json
+ln -s $SCRIPT_PATH/.config/waybar/runrofi.sh /home/$USER/.config/waybar/runrofi.sh
+ln -s $SCRIPT_PATH/.config/waybar/style.css /home/$USER/.config/waybar/style.css
 
 echo "linking waypaper config file..."
 mkdir -p /home/$USER/waypaper
@@ -36,3 +43,10 @@ cp -r $SCRIPT_PATH/wallpapers/ /home/$USER/Bilder/wallpapers
 echo "linking kitty config file..."
 mkdir -p /home/$USER/.config/kitty
 ln -s $SCRIPT_PATH/.config/kitty/kitty.conf /home/$USER/.config/kitty/kitty.conf
+
+echo "linking rofi config file..."
+mkdir -p /home/$USER/.config/rofi
+ln -s $SCRIPT_PATH/.config/rofi/config.rasi /home/$USER/.config/rofi/config.rasi
+
+echo "linking scripts..."
+ln -s $SCRIPT_PATH/.scripts /home/$USER/.scripts
