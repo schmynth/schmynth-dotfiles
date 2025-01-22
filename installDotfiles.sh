@@ -19,6 +19,9 @@ set -x #echo on
 echo "linking .zshrc..."
 ln -s $SCRIPT_PATH/.zshrc /home/$USER/.zshrc
 
+echo "linking .vimrc..."
+ln -s $SCRIPT_PATH/.vimrc /home/$USER/.vimrc
+
 echo "linking hyprland config file..."
 mkdir -p /home/$USER/hypr
 ln -s $SCRIPT_PATH/.config/hypr/hyprland.conf /home/$USER/.conf/hypr/hyprland.conf
