@@ -23,6 +23,16 @@ ln -sf $SCRIPT_PATH/.zshrc /home/$USER/.zshrc
 echo "linking .vimrc..."
 ln -sf $SCRIPT_PATH/.vimrc /home/$USER/.vimrc
 
+# install vim plugins and colors
+mkdir -p ~/.vim
+mkdir -p ~/.vim/bundle
+mkdir -p ~/.vim/bundle/ale
+mkdir -p ~/.vim/bundle/Vundle.vim
+git clone https://github.com/dense-analysis/ale ~/.bundle/ale
+git clone https://github.com/VundleVim/Vundle.vim ~/.bundle/Vundle.vim
+git clone https://github.com/gosukiwi/vim-atom-dark
+cp -r vim-atom-dark/colors ~/.vim/
+
 echo "linking .alacritty.toml..."
 ln -sf $SCRIPT_PATH/.alacritty.toml /home/$USER/.alacritty.toml
 
