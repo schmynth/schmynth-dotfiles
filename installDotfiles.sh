@@ -46,7 +46,7 @@ ln -sf $SCRIPT_PATH/.config/waybar/color_palette.css /home/$USER/.config/waybar/
 # ln -sf $SCRIPT_PATH/.config/waypaper/config.ini /home/$USER/.config/waypaper/config.ini
 
 echo "copying wallpaper folder..."
-cp -r $SCRIPT_PATH/wallpapers/ /home/$USER/Bilder/wallpapers
+cp -r $SCRIPT_PATH/wallpapers/ /home/$USER/Bilder/
 
 echo "linking kitty config file..."
 mkdir -p /home/$USER/.config/kitty
