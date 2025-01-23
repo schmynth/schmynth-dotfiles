@@ -10,3 +10,5 @@ cd yay
 makepkg -si
 cd ..
 yay -S --needed - < .packagesAUR 
+
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
