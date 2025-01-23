@@ -27,8 +27,12 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" encoding
+set encoding=utf-8
+
 " Colors:
 set t_Co=256
+syntax on
 
 colorscheme atom-dark-256
 
@@ -41,3 +45,13 @@ set hlsearch
 
 " keymaps
 nnoremap <space> za
+
+" python indentation:
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4|
+    \ set textwidth=79|
+    \ set expandtab|
+    \ set autoindent|
+    \ set fileformat=unix
