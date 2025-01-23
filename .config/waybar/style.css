@@ -1,3 +1,5 @@
+@import "color_palette.css";
+
 * {
   border: none;
   border-radius: 0;
@@ -5,6 +7,15 @@
   font-family: JetBrainsMono Nerd Font;
   font-size: 15px;
 }
+
+/*
+@define-color primary #0B1C24; 
+@define-color text_cl #FFFFFF;
+@define-color accent1 #294552;
+@define-color accent2 #3A5B6B;
+@define-color accent3 #4B6D7D;
+@define-color accent4 #577D8F;
+*/
 
 window#waybar {
   background-color: transparent;
@@ -30,13 +41,13 @@ window#waybar.hidden {
   padding: 0px 6px;
   margin: 6px 3px;
   border-radius: 8px;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  background-color: @accent2; /* #1e1e2e; */
+  color: @primary; /* #cdd6f4; */
 }
 
 #workspaces button.active {
-  color: #1e1e2e;
-  background-color: #cdd6f4;
+  color: @text_cl; /*#1e1e2e;*/
+  background-color: @accent4/*#cdd6f4;*/
 }
 
 #workspaces button:hover {
