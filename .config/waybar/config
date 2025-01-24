@@ -119,7 +119,7 @@
      "custom/exit": {                                                                           
          "format": "",                                                                         
          "tooltip-format": "Powermenu",                                                         
-         "on-click": "wlogout -b 4",                                                            
+         "on-click": "wlogout --protocol layer-shell -b 5",                                                            
          "tooltip": false                                                                       
      },                                                                                         
        
