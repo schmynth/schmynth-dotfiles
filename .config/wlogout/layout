@@ -1,0 +1,33 @@
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit 0",
+    "text" : "logout"     
+}
+
+{
+    "label" : "lock",
+    "action" : "hyprlock",
+    "text" : "lock"
+}
+
+
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "shutdown"
+}
+
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "reboot"     
+}
+
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "suspend"    
+}
+
+
+
