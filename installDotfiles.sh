@@ -68,3 +68,6 @@ ln -sf $SCRIPT_PATH/.config/rofi/config.rasi /home/$USER/.config/rofi/config.ras
 
 echo "linking scripts..."
 ln -sf $SCRIPT_PATH/.scripts /home/$USER/.scripts
+
+echo "linking wlogout config files..."
+ln -sf $SCRIPT_PATH/.config/wlogout /home/$USER/.config/wlogout
