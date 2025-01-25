@@ -4,7 +4,7 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: JetBrainsMono Nerd Font;
+  font-family: "JetBrainsMono Nerd Font", "Font Awesome";
   font-size: 15px;
 }
 
@@ -41,13 +41,13 @@ window#waybar.hidden {
   padding: 0px 6px;
   margin: 6px 3px;
   border-radius: 8px;
-  background-color: @accent2; /* #1e1e2e; */
-  color: @primary; /* #cdd6f4; */
+  background-color: @accent2_1; /* #1e1e2e; */
+  color: @primary1; /* #cdd6f4; */
 }
 
 #workspaces button.active {
   color: @text_cl; /*#1e1e2e;*/
-  background-color: @accent4/*#cdd6f4;*/
+  background-color: @accent4_1/*#cdd6f4;*/
 }
 
 #workspaces button:hover {
@@ -70,31 +70,33 @@ window#waybar.hidden {
   border-radius: 8px;
   padding: 2px 6px;
   margin: 6px 3px;
-  background-color: #cba6f7;
+  color: @text2;
+  background-color: @accent4_1;
 }
 #language {
   border-radius: 8px;
   padding: 2px 6px;
   margin: 6px 3px;
-  background-color: #5ba6f7;
+  background-color: @accent4_4;
 }
 #custom-appmenu {
   border-radius: 8px;
   padding: 2px 6px;
   margin: 6px 3px;
-  background-color: #cbcbf7;
+  color: @text2;
+  background-color: @accent2_3;
 }
 #taskbar {
   border-radius: 8px;
   padding: 2px 6px;
   margin: 6px 3px;
-  background-color: #bbdfbb;
+  background-color: @accent4_1;
 }
 #pulseaudio {
   border-radius: 8px;
   padding: 2px 6px;
   margin: 6px 3px;
-  background-color: #cbcbf7;
+  background-color: @accent4_4;
 }
 #user {
   border-radius: 8px;
@@ -127,7 +129,7 @@ window#waybar.hidden {
   border-radius: 8px;
   padding: 0px 6px;
   margin: 6px 3px;
-  background-color: #cbcbf7;
+  background-color: @accent3_4;
 }
 
 #battery {
@@ -150,22 +152,13 @@ window#waybar.hidden {
   background-color: #fab387;
 }
 
-#wireplumber {
-  background-color: #f9e2af;
-}
-
 #network {
-  background-color: #94e2d5;
+  background-color: @accent2_4;
   padding-right: 17px;
 }
 
-#clock {
-  font-family: JetBrainsMono Nerd Font;
-  background-color: #cba6f7;
-}
-
 #custom-exit{
-  background-color: #f2cdcd;
+  background-color: @accent1_4;
 }
 
 

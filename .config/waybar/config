@@ -5,10 +5,10 @@
     "height": 20,
     "modules-left": ["custom/appmenu", "hyprland/workspaces","wlr/taskbar"],
     "modules-center": ["clock"],
-    "modules-right": ["group/hardware", "hyprland/language", "network", "pulseaudio", "custom/exit"],
+    "modules-right": ["pulseaudio", "hyprland/language", "group/hardware", "network", "custom/exit"],
     "custom/appmenu": {
         	"format": "Menu {icon}",
-        	"format-icon": "󰻀",
+        	"format-icon": "",
         	"rotate": 0,
         	"on-click": "~/.config/waybar/runrofi.sh"
     },
