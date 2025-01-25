@@ -7,13 +7,13 @@
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "hyprland/language", "group/hardware", "network", "custom/exit"],
     "custom/appmenu": {
-        	"format": "Menu {icon}",
+        	"format": " \uf303 ",
         	"format-icon": "",
         	"rotate": 0,
         	"on-click": "~/.config/waybar/runrofi.sh"
     },
     "wlr/taskbar": {
-        	"format": "{icon}",
+        	"format": "{name}",
         	"tooltip": true,
         	"tooltip-format": "{title}",
         	"on-click": "activate",
