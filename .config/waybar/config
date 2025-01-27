@@ -5,7 +5,7 @@
     "height": 20,
     "modules-left": ["custom/appmenu", "hyprland/workspaces","wlr/taskbar"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "hyprland/language", "group/hardware", "network", "custom/exit"],
+    "modules-right": ["group/hardware"],
     "custom/appmenu": {
         	"format": " \uf303 ",
         	"format-icon": "",
@@ -19,7 +19,7 @@
         	"on-click": "activate",
         	"on-click-middle": "close",
         	"active-first": true
-   	 },
+    },
      "hyprland/workspaces": {
 		"format": "{name} : {icon}",
 		"format-icons": {
@@ -31,10 +31,12 @@
 			"active": "",
 			"default": ""
     		},
-        "persistent-workspaces": {
+
+     "persistent-workspaces": {
       		"Virtual-1": [1, 2, 3, 4, 5]
-    		}
+		}
     },
+
     "clock": {
         	"format": "{:%H:%M}",
         	"rotate": 0,
@@ -99,22 +101,7 @@
      "hyprland/language": {
          "format": "   {short}"
      },
- 
-     // Group Hardware
-     "group/hardware": {
-         "orientation": "horizontal",
-         //"drawer": {
-         //    "transition-duration": 300,
-         //    "children-class": "not-memory",
-         //    "transition-left-to-right": false
-         //},
-         "modules": [
-             "custom/system",
-             "disk",
-             "cpu",
-             "memory",
-         ]
-     },
+
      // Power Menu                                                                              
      "custom/exit": {                                                                           
          "format": "",                                                                         
@@ -122,7 +109,7 @@
          "on-click": "wlogout --protocol layer-shell -b 5",                                                            
          "tooltip": false                                                                       
      },                                                                                         
-       
+
     "network": {
         	"tooltip": true,
         	"rotate": 0,
@@ -133,5 +120,26 @@
         	"tooltip-format-disconnected": "Disconnected",
         	"format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
         	"interval": 2
-    	}
-    }
+    	},
+ 
+     // Group Hardware
+     "group/hardware": {
+         "orientation": "horizontal",
+         //"drawer": {
+         //    "transition-duration": 300,
+         //    "children-class": "not-memory",
+         //    "transition-left-to-right": false
+         //},
+		"modules": [
+			"hyprland/language",
+			"pulseaudio",
+			"custom/system",
+			"disk",
+			"cpu",
+			"memory",
+			"network",
+			"custom/exit"
+		]
+     }
+       
+}

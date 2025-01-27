@@ -61,11 +61,9 @@ window#waybar.hidden {
   background-color: #f38ba8;
 }
 
-#custom-exit,
 #battery,
 #backlight,
 #wireplumber,
-#network,
 #clock {
   border-radius: 8px;
   padding: 2px 6px;
@@ -73,12 +71,15 @@ window#waybar.hidden {
   color: @text2;
   background-color: @accent4_1;
 }
+/*
 #language {
   border-radius: 8px;
   padding: 2px 6px;
   margin: 6px 3px;
   background-color: @accent4_4;
+  color: @text2;
 }
+*/
 #custom-appmenu {
   border-radius: 8px;
   padding: 2px 6px;
@@ -91,19 +92,17 @@ window#waybar.hidden {
   padding: 2px 6px;
   margin: 6px 3px;
   background-color: @accent4_1;
+  color: @text2;
 }
+/*
 #pulseaudio {
   border-radius: 8px;
   padding: 2px 6px;
   margin: 6px 3px;
   background-color: @accent4_4;
 }
-#user {
-  border-radius: 8px;
-  padding: 2px 6px;
-  margin: 6px 3px;
-  background-color: #cba6f7;
-}
+*/
+
 #tray {
   border-radius: 8px;
   margin: 6px 3px;
@@ -111,11 +110,11 @@ window#waybar.hidden {
   background-color: #1e1e2e;
   color: #181825;
 }
-
+/*
 #custom-exit{
-  margin-right: 6px;
+  margin-right: 0px;
 }
-
+*/
 #custom-logo {
   padding-right: 7px;
   padding-left: 7px;
@@ -129,13 +128,10 @@ window#waybar.hidden {
   border-radius: 8px;
   padding: 0px 6px;
   margin: 6px 3px;
-  background-color: @accent3_4;
+  background-color: @accent2_1;
 }
 
-#battery {
-  background-color: #f38ba8;
-}
-
+/*
 #battery.warning,
 #battery.critical,
 #battery.urgent {
@@ -143,24 +139,16 @@ window#waybar.hidden {
   color: #FFFF00;
 }
 
-#battery.charging {
-  background-color: #a6e3a1;
-  color: #181825;
-}
-
 #backlight {
   background-color: #fab387;
 }
-
+*/
+/*
 #network {
   background-color: @accent2_4;
   padding-right: 17px;
 }
-
-#custom-exit{
-  background-color: @accent1_4;
-}
-
+*/
 
 tooltip {
   border-radius: 8px;
