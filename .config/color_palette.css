@@ -1,32 +1,32 @@
 /* Group 1 */
-@define-color primary1 rgba(11,28,36,1);
-@define-color text1 rgba(255,255,255,1);
-@define-color accent1_1 rgba(41,69,82,1);
-@define-color accent2_1 rgba(58,91,107,1);
-@define-color accent3_1 rgba(75,109,125,1);
-@define-color accent4_1 rgba(87,125,143,1);
+@define-color primary1 rgba(11,28,36,0.5);
+@define-color text1 rgba(255,255,255,0.5);
+@define-color accent1_1 rgba(41,69,82,0.5);
+@define-color accent2_1 rgba(58,91,107,0.5);
+@define-color accent3_1 rgba(75,109,125,0.5);
+@define-color accent4_1 rgba(87,125,143,0.5);
 
 /* Group 2  */
-@define-color primary2 rgba(60,97,98,1);
-@define-color text2 rgba(255,255,255,1);
-@define-color accent1_2 rgba(41,81,82,1);
-@define-color accent2_2 rgba(58,106,107,1);
-@define-color accent3_2 rgba(75,124,125,1);
-@define-color accent4_2 rgba(87,141,143,1);
+@define-color primary2 rgba(60,97,98,0.5);
+@define-color text2 rgba(255,255,255,0.5);
+@define-color accent1_2 rgba(41,81,82,0.5);
+@define-color accent2_2 rgba(58,106,107,0.5);
+@define-color accent3_2 rgba(75,124,125,0.5);
+@define-color accent4_2 rgba(87,141,143,0.5);
 
 /* Group 3  */
-@define-color primary3 rgba(136,160,150,1);
-@define-color text3 rgba(17,17,17,1);
-@define-color accent1_3 rgba(41,82,65,1);
-@define-color accent2_3 rgba(58,107,87,1);
-@define-color accent3_3 rgba(75,125,104,1);
-@define-color accent4_3 rgba(87,143,120,1);
+@define-color primary3 rgba(136,160,150,0.5);
+@define-color text3 rgba(17,17,17,0.5);
+@define-color accent1_3 rgba(41,82,65,0.5);
+@define-color accent2_3 rgba(58,107,87,0.5);
+@define-color accent3_3 rgba(75,125,104,0.5);
+@define-color accent4_3 rgba(87,143,120,0.5);
 
 /* Group 4 */
-@define-color primary4 rgba(229,223,204,1);
-@define-color text4 rgba(6,6,6,1);
-@define-color accent1_4 rgba(82,72,41,1);
-@define-color accent2_4 rgba(107,95,58,1);
-@define-color accent3_4 rgba(125,113,75,1);
-@define-color accent4_4 rgba(143,129,87,1);
+@define-color primary4 rgba(229,223,204,0.5);
+@define-color text4 rgba(6,6,6,0.5);
+@define-color accent1_4 rgba(82,72,41,0.5);
+@define-color accent2_4 rgba(107,95,58,0.5);
+@define-color accent3_4 rgba(125,113,75,0.5);
+@define-color accent4_4 rgba(143,129,87,0.5);
 

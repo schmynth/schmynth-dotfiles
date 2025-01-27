@@ -5,17 +5,15 @@ import linecache
 import subprocess
 
 output_filename = "color_palette.css"
-# has to be changed: !!!!!!!!!!!!
-user_directory = os.path.expanduser('~') + '/Developer/Software/schmynth-dotfiles/.config/'
-output_file = user_directory + output_filename
 
+def update_palette(path):
 
-def update_palette():
+    output_file = path + output_filename
     # read dcol file of current wallpaper
-    color_codes_dict = e.get_color_codes_dict_rgba()
+    color_codes_dict = e.get_color_codes_dict_rgba(0.5)
 
     # read output file into data
-    with open(output_filename,'r', encoding='utf-8') as file:
+    with open(output_file,'r', encoding='utf-8') as file:
         data = file.readlines()
     # color_palette.css File is now stored in data
     file.close()

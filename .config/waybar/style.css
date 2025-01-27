@@ -34,7 +34,7 @@ window#waybar.hidden {
   margin: 2px 3px;
   border-radius: 8px;
   background-color: @accent2_1; /* #1e1e2e; */
-  color: @primary1; /* #cdd6f4; */
+  color: @primary4; /* #cdh6f4; */
 }
 
 #workspaces button.active {
@@ -45,8 +45,8 @@ window#waybar.hidden {
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
-  color: #1e1e2e;
-  background-color: #cdd6f4;
+  color: @text1; /*#1e1e2e;*/
+  background-color: @accent4_4; /*#cdd6f4;*/
 }
 
 #workspaces button.urgent {

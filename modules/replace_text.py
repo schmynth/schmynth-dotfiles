@@ -25,7 +25,7 @@ def remove_color_code_rgba(line):
     Returns:
         str: stripped line, as before but without color code.
     """
-    stripped_line = line.rstrip("1234567890ABCDEFrgba;\n()#,\\")
+    stripped_line = line.rstrip("1234567890ABCDEFrgba;\n()#,\\.")
     return stripped_line
 
 def replace_color_rgb(file_data, color_name, replacement_color):

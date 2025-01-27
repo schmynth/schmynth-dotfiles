@@ -1,4 +1,4 @@
 #!/bin/bash
 
-killall waybar
+killall -q waybar
 hyprctl dispatch exec waybar

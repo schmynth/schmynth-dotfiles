@@ -91,7 +91,7 @@ def get_color_codes_dict_rgb():
 
     return color_codes_dict
 
-def get_color_codes_dict_rgba():
+def get_color_codes_dict_rgba(opacity):
     lines_color_ln = {v+1: k for k, v in lines_color_nl.items()}
 
     # check if palette file (wallpaper.jpg.dcol) exists
@@ -115,8 +115,8 @@ def get_color_codes_dict_rgba():
         # check if line is interesting
         if current_line_number in lines_color_ln.keys():
             current_code = line[16:]
-            current_code = current_code.rstrip("\n\"1\\)")
-            current_code = current_code + "1)"
+            current_code = current_code.rstrip("\n\"1\\);.")
+            current_code = current_code + str(opacity) + ")"
             #current_code = current_code.lstrip("#")
             color_codes_dict.update({lines_color_ln[current_line_number] : current_code})
         current_line_number += 1
