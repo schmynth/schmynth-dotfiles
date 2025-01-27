@@ -69,7 +69,6 @@ window#waybar.hidden {
   padding: 0px 6px;
   margin: 6px 3px;
   color: @text2;
-  opacity: 0.8;
   background-color: @accent4_1;
 }
 
@@ -81,7 +80,6 @@ window#waybar.hidden {
   padding: 0px 3px;
   margin: 6px 3px;
   color: @text2;
-  opacity: 0.8;
   background-color: @accent4_1;
 }
 
@@ -93,7 +91,6 @@ window#waybar.hidden {
   padding: 0px 6px;
   margin: 6px 3px;
   color: @text2;
-  opacity: 0.8;
   background-color: @accent4_1;
 }
 /*

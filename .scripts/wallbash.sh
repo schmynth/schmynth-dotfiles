@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/sh
+
 #|---/ /+---------------------------------------------+---/ /|#
 #|--/ /-| Script to generate color palette from image |--/ /-|#
 #|-/ /--| Prasanth Rangan                             |-/ /--|#
@@ -6,6 +7,7 @@
 
 
 #// accent color profile
+echo "wallbash has been called"
 
 colorProfile="default"
 wallbashCurve="32 50\n42 46\n49 40\n56 39\n64 38\n76 37\n90 33\n94 29\n100 20"
@@ -54,6 +56,8 @@ wallbashRaw="${2:-"${wallbashImg}"}.mpc"
 wallbashOut="${2:-"${wallbashImg}"}.dcol"
 wallbashCache="${2:-"${wallbashImg}"}.cache"
 
+echo "${1}"
+
 
 #// color modulations
 
@@ -76,7 +80,8 @@ fi
 
 magick -ping "${wallbashImg}" -format "%t" info: &> /dev/null
 if [ $? -ne 0 ] ; then
-    echo "Error: Unsuppoted image format ${wallbashImg}"
+    echo "${1}"
+    echo "Error: Unsupported image format ${wallbashImg}"
     exit 1
 fi
 

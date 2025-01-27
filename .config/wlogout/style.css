@@ -1,13 +1,15 @@
+@import "color_palette.css";
+
 * {
 	background-image: none;
 }
 window {
-	background-color: rgba(41, 69, 82, 0.5);
+	background-color: @accent1_1;
 }
 button {
     color: #0f2137;
 	font-size: 16px;
-	background-color: #577D8F;
+	background-color: @accent4_1;/* #577D8F; */
 	border-style: solid;
 	border-color: #000000;
 	border-width: 3px;

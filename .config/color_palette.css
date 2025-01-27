@@ -1,32 +1,32 @@
 /* Group 1 */
-@define-color primary1 #0B1C24;
-@define-color text1 #FFFFFF;
-@define-color accent1_1 #294552;
-@define-color accent2_1 #3A5B6B;
-@define-color accent3_1 #4B6D7D;
-@define-color accent4_1 #577D8F;
+@define-color primary1 rgba(11,28,36,1);
+@define-color text1 rgba(255,255,255,1);
+@define-color accent1_1 rgba(41,69,82,1);
+@define-color accent2_1 rgba(58,91,107,1);
+@define-color accent3_1 rgba(75,109,125,1);
+@define-color accent4_1 rgba(87,125,143,1);
 
 /* Group 2  */
-@define-color primary2 #3C6162;
-@define-color text2 #FFFFFF;
-@define-color accent1_2 #295152;
-@define-color accent2_2 #3A6A6B;
-@define-color accent3_2 #4B7C7D;
-@define-color accent4_2 #578D8F;
+@define-color primary2 rgba(60,97,98,1);
+@define-color text2 rgba(255,255,255,1);
+@define-color accent1_2 rgba(41,81,82,1);
+@define-color accent2_2 rgba(58,106,107,1);
+@define-color accent3_2 rgba(75,124,125,1);
+@define-color accent4_2 rgba(87,141,143,1);
 
 /* Group 3  */
-@define-color primary3 #88A096;
-@define-color text3 #111111;
-@define-color accent1_3 #295241;
-@define-color accent2_3 #3A6B57;
-@define-color accent3_3 #4B7D68;
-@define-color accent4_3 #578F78;
+@define-color primary3 rgba(136,160,150,1);
+@define-color text3 rgba(17,17,17,1);
+@define-color accent1_3 rgba(41,82,65,1);
+@define-color accent2_3 rgba(58,107,87,1);
+@define-color accent3_3 rgba(75,125,104,1);
+@define-color accent4_3 rgba(87,143,120,1);
 
 /* Group 4 */
-@define-color primary4 #E5DFCC;
-@define-color text4 #060606;
-@define-color accent1_4 #524829;
-@define-color accent2_4 #6B5F3A;
-@define-color accent3_4 #7D714B;
-@define-color accent4_4 #8F8157;
+@define-color primary4 rgba(229,223,204,1);
+@define-color text4 rgba(6,6,6,1);
+@define-color accent1_4 rgba(82,72,41,1);
+@define-color accent2_4 rgba(107,95,58,1);
+@define-color accent3_4 rgba(125,113,75,1);
+@define-color accent4_4 rgba(143,129,87,1);
 
