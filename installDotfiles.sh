@@ -67,7 +67,7 @@ mkdir -p /home/$USER/.config/rofi
 ln -sf $SCRIPT_PATH/.config/rofi/config.rasi /home/$USER/.config/rofi/config.rasi
 
 echo "linking scripts..."
-ln -sf $SCRIPT_PATH/.scripts /home/$USER/.scripts
+ln -sf $SCRIPT_PATH/.scripts /home/$USER/
 
 echo "linking wlogout config files..."
 ln -sf $SCRIPT_PATH/.config/wlogout /home/$USER/.config/wlogout
