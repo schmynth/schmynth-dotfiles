@@ -8,14 +8,6 @@
   font-size: 15px;
 }
 
-/*
-@define-color primary #0B1C24; 
-@define-color text_cl #FFFFFF;
-@define-color accent1 #294552;
-@define-color accent2 #3A5B6B;
-@define-color accent3 #4B6D7D;
-@define-color accent4 #577D8F;
-*/
 
 window#waybar {
   background-color: transparent;
@@ -38,15 +30,15 @@ window#waybar.hidden {
   /* Fix weird spacing in materia (waybar #450) */
   box-shadow: inset 0 -3px transparent;
   /* Use box-shadow instead of border so the text isn't offset */
-  padding: 0px 6px;
-  margin: 6px 3px;
+  padding: 0px 4px;
+  margin: 2px 3px;
   border-radius: 8px;
   background-color: @accent2_1; /* #1e1e2e; */
   color: @primary1; /* #cdd6f4; */
 }
 
 #workspaces button.active {
-  color: @text_cl; /*#1e1e2e;*/
+  color: @text1; /*#1e1e2e;*/
   background-color: @accent4_1/*#cdd6f4;*/
 }
 
@@ -60,26 +52,51 @@ window#waybar.hidden {
 #workspaces button.urgent {
   background-color: #f38ba8;
 }
-
-#battery,
-#backlight,
-#wireplumber,
-#clock {
-  border-radius: 8px;
-  padding: 2px 6px;
-  margin: 6px 3px;
-  color: @text2;
-  background-color: @accent4_1;
-}
 /*
 #language {
   border-radius: 8px;
-  padding: 2px 6px;
-  margin: 6px 3px;
-  background-color: @accent4_4;
+  padding: 0px 6px;
+  margin: 0px 3px;
+  background-color: @accent4_1;
   color: @text2;
 }
 */
+#left_group {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: @accent1_1;
+  border-width: 1px;
+  padding: 0px 6px;
+  margin: 6px 3px;
+  color: @text2;
+  opacity: 0.8;
+  background-color: @accent4_1;
+}
+
+#clock {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: @accent1_1;
+  border-width: 1px;
+  padding: 0px 3px;
+  margin: 6px 3px;
+  color: @text2;
+  opacity: 0.8;
+  background-color: @accent4_1;
+}
+
+#hardware {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: @accent1_1;
+  border-width: 1px;
+  padding: 0px 6px;
+  margin: 6px 3px;
+  color: @text2;
+  opacity: 0.8;
+  background-color: @accent4_1;
+}
+/*
 #custom-appmenu {
   border-radius: 8px;
   padding: 2px 6px;
@@ -87,13 +104,16 @@ window#waybar.hidden {
   color: @text2;
   background-color: @accent2_3;
 }
+*/
+/*
 #taskbar {
   border-radius: 8px;
-  padding: 2px 6px;
-  margin: 6px 3px;
+  padding: 0px 0px;
+  margin: 0px 0px;
   background-color: @accent4_1;
-  color: @text2;
+  color: @text1;
 }
+*/
 /*
 #pulseaudio {
   border-radius: 8px;
@@ -105,16 +125,11 @@ window#waybar.hidden {
 
 #tray {
   border-radius: 8px;
-  margin: 6px 3px;
+  margin: 0px 0px;
   padding: 0px 6px;
   background-color: #1e1e2e;
-  color: #181825;
+  color: @text2;
 }
-/*
-#custom-exit{
-  margin-right: 0px;
-}
-*/
 #custom-logo {
   padding-right: 7px;
   padding-left: 7px;
@@ -124,13 +139,17 @@ window#waybar.hidden {
   color: #1793d1;
 }
 
-#hardware {
-  border-radius: 8px;
-  padding: 0px 6px;
-  margin: 6px 3px;
-  background-color: @accent2_1;
-}
 
+/*
+#custom-exit{
+  margin-right: 0px;
+}
+*/
+/*
+#battery,
+#backlight,
+#wireplumber,
+*/
 /*
 #battery.warning,
 #battery.critical,
