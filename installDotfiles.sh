@@ -49,7 +49,8 @@ ln -sf $SCRIPT_PATH/.config/waybar/config /home/$USER/.config/waybar/config
 ln -sf $SCRIPT_PATH/.config/waybar/modules.json /home/$USER/.config/waybar/modules.json
 ln -sf $SCRIPT_PATH/.config/waybar/runrofi.sh /home/$USER/.config/waybar/runrofi.sh
 ln -sf $SCRIPT_PATH/.config/waybar/style.css /home/$USER/.config/waybar/style.css
-ln -sf $SCRIPT_PATH/.config/waybar/color_palette.css /home/$USER/.config/waybar/color_palette.css
+ln -sf $SCRIPT_PATH/.config/color_palette.css /home/$USER/.config/waybar/color_palette.css
+ln -sf $SCRIPT_PATH/.config/color_palette.css /home/$USER/.config/wlogout/color_palette.css
 
 # echo "linking waypaper config file..."
 # mkdir -p /home/$USER/.config/waypaper
@@ -70,4 +71,4 @@ echo "linking scripts..."
 ln -sf $SCRIPT_PATH/.scripts /home/$USER/
 
 echo "linking wlogout config files..."
-ln -sf $SCRIPT_PATH/.config/wlogout /home/$USER/.config/wlogout
+ln -sf $SCRIPT_PATH/.config/wlogout /home/$USER/.config/
