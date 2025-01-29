@@ -1,47 +1,46 @@
-# Diary
-
-- [Diary](#diary)
-  - [Tools ](#tools-)
-    - [CPU Governor steuern:](#cpu-governor-steuern)
-  - [Peripherals ](#peripherals-)
-    - [nuphy air75](#nuphy-air75)
-    - [wacom tablet](#wacom-tablet)
-  - [Desktop ](#desktop-)
-    - [country flags as keyboard layout indicator:](#country-flags-as-keyboard-layout-indicator)
-    - [screen brightness](#screen-brightness)
-    - [.desktop files](#desktop-files)
-    - [Install cursors](#install-cursors)
-    - [icons von Overview search entfernen (zb vst plugins)](#icons-von-overview-search-entfernen-zb-vst-plugins)
-  - [Pro Audio](#pro-audio)
-    - [alsa](#alsa)
-    - [midi settings:](#midi-settings)
-    - [Midi Controller](#midi-controller)
-    - [Realtime Audio](#realtime-audio)
-    - [Bitwig](#bitwig)
-  - [grub ](#grub-)
-  - [Gaming](#gaming)
-  - [Wine](#wine)
-  - [general linux tips](#general-linux-tips)
-    - [Environment Variables](#environment-variables)
-    - [Shell Configuration](#shell-configuration)
-    - [fstab](#fstab)
-    - [hidden files (no dot):](#hidden-files-no-dot)
-    - [copy over ssh](#copy-over-ssh)
-    - [best practice](#best-practice)
-  - [pacman](#pacman)
-    - [update mirrors](#update-mirrors)
-    - [tipps and tricks](#tipps-and-tricks)
-  - [vim](#vim)
-    - [plugins](#plugins)
-      - [ale](#ale)
-  - [Hyprland](#hyprland)
-    - [wallpapers:](#wallpapers)
-    - [Launcher](#launcher)
-    - [blue light filter](#blue-light-filter-flux)
+- [Tools](#tools)
+  - [CPU Governor steuern:](#cpu-governor-steuern)
+- [Peripherals](#peripherals)
+  - [nuphy air75](#nuphy-air75)
+  - [wacom tablet](#wacom-tablet)
+- [Gnome Desktop](#gnome-desktop)
+  - [themes](#themes)
+  - [country flags as keyboard layout indicator:](#country-flags-as-keyboard-layout-indicator)
+  - [screen brightness](#screen-brightness)
+  - [.desktop files](#desktop-files)
+  - [Install cursors](#install-cursors)
+  - [icons von Overview search entfernen (zb vst plugins)](#icons-von-overview-search-entfernen-zb-vst-plugins)
+- [Pro Audio](#pro-audio)
+  - [alsa](#alsa)
+  - [midi settings:](#midi-settings)
+  - [Midi Controller](#midi-controller)
+  - [Realtime Audio](#realtime-audio)
+  - [Bitwig](#bitwig)
+- [grub](#grub)
+- [Gaming](#gaming)
+- [Wine](#wine)
+- [general linux tips](#general-linux-tips)
+  - [Environment Variables](#environment-variables)
+  - [Shell Configuration](#shell-configuration)
+  - [fstab](#fstab)
+  - [hidden files (no dot):](#hidden-files-no-dot)
+  - [copy over ssh](#copy-over-ssh)
+  - [best practice](#best-practice)
+- [pacman](#pacman)
+  - [update mirrors](#update-mirrors)
+  - [tipps and tricks](#tipps-and-tricks)
+- [vim](#vim)
+  - [plugins](#plugins)
+    - [ale](#ale)
+- [Hyprland](#hyprland)
+  - [wallpapers:](#wallpapers)
+  - [gtk dark theme](#gtk-dark-theme)
+  - [launcher](#launcher)
     - [theming](#theming)
+  - [blue light filter (flux)](#blue-light-filter-flux)
 
 
-## Tools <a name = "tools"></a>
+## Tools
 
 Fullscreen hotkey terminal:<br>
 **ddterm** gnome extension
@@ -62,7 +61,7 @@ Ordner synchronisieren:<br>
 
 	cpufreq-info
 
-## Peripherals <a name = "peripherals"></a>
+## Peripherals
 
 ### nuphy air75
 
@@ -95,7 +94,11 @@ To change projection of Wacom tablet issue:
     HEAD-0-> Monitor 0
 
 
-## Gnome Desktop <a name = "desktop"></a>
+## Gnome Desktop
+
+### themes 
+
+The default themes are saved in /usr/share/themes
 
 ### country flags as keyboard layout indicator:
 
@@ -186,7 +189,7 @@ plugins alle individuell sandboxen<br>
 Bitwig findet plugins nicht? ->	Lösche vst meta data in /home/sebastian/.BitwigStudio/cache
 
 
-## grub <a name = "grub"></a>
+## grub
 
 Arch grub config aktualisieren:
 

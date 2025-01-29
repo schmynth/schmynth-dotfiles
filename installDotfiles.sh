@@ -59,6 +59,9 @@ ln -sf $SCRIPT_PATH/.config/color_palette.css /home/$USER/.config/wlogout/color_
 echo "copying wallpaper folder..."
 cp -r $SCRIPT_PATH/wallpapers/ /home/$USER/Bilder/
 
+echo "linking waypaper config..."
+ln -sf $SCRIPT_PATH/.config/waypaper/ /home/$USER/.config/
+
 echo "linking kitty config file..."
 mkdir -p /home/$USER/.config/kitty
 ln -sf $SCRIPT_PATH/.config/kitty/kitty.conf /home/$USER/.config/kitty/kitty.conf
