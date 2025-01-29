@@ -1,6 +1,7 @@
 # schmynth-dotfiles
-my linux dotfiles containing config files for:
+my arch linux dotfiles 
 
+This repo contains config files for:
 vim, kitty, hyprland, waybar...
 
 ## Requirements
