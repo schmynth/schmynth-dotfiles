@@ -17,6 +17,11 @@ lines_color_nl = {
     'accent2_1' : 8,
     'accent3_1' : 10,
     'accent4_1' : 12,
+    'accent5_1' : 14,
+    'accent6_1' : 16,
+    'accent7_1' : 18,
+    'accent8_1' : 20,
+    'accent9_1' : 22,
     
     'primary2' : 24,
     'text2' : 26,
@@ -24,6 +29,11 @@ lines_color_nl = {
     'accent2_2' : 30,
     'accent3_2' : 32,
     'accent4_2' : 34,
+    'accent5_2' : 36,
+    'accent6_2' : 38,
+    'accent7_2' : 40,
+    'accent8_2' : 42,
+    'accent9_2' : 44,
 
     'primary3' : 46,
     'text3' : 48,
@@ -31,6 +41,11 @@ lines_color_nl = {
     'accent2_3' : 52,
     'accent3_3' : 54,
     'accent4_3' : 56,
+    'accent5_3' : 58,
+    'accent6_3' : 60,
+    'accent7_3' : 62,
+    'accent8_3' : 64,
+    'accent9_3' : 66,
 
     'primary4' : 68,
     'text4' : 70,
@@ -38,6 +53,11 @@ lines_color_nl = {
     'accent2_4' : 74,
     'accent3_4' : 76,
     'accent4_4' : 78,
+    'accent5_4' : 80,
+    'accent6_4' : 82,
+    'accent7_4' : 84,
+    'accent8_4' : 86,
+    'accent9_4' : 88,
     }
 
 def get_wallpaper_path():

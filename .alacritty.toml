@@ -1,2 +1,6 @@
 [font]
 normal = { family = "Fira Code", style = "medium" }
+[window]
+opacity = 0.8
+[colors.primary]
+background = "#294552"
