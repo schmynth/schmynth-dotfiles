@@ -36,7 +36,11 @@
       		"Virtual-1": [1, 2, 3, 4, 5]
 		}
     },
-
+"pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+},
      // Group Left
      "group/left_group": {
          "orientation": "horizontal",
@@ -147,6 +151,7 @@
 		"modules": [
 			"hyprland/language",
 			"pulseaudio",
+			"pulseaudio/slider",
 			"custom/system",
 			"disk",
 			"cpu",
