@@ -38,3 +38,7 @@ def update_palette(path):
     f.close()
 
 
+def test_function(string1, string2):
+    string = string1 + string2
+    print(string)
+

@@ -8,7 +8,7 @@ import linecache
 
 # list that indexes group, color class and line number
 # lines_color[group][color_class][line_number]
-# color_class is primary, text, accent 1 - 4
+# color_class is primary, text, accent 1 - 9
 
 lines_color_nl = {
     'primary1' : 2,
@@ -142,3 +142,10 @@ def get_color_codes_dict_rgba(opacity):
         current_line_number += 1
 
     return color_codes_dict
+
+
+def get_color_mode():
+    dcol_path = get_wallpaper_path() + ".dcol"
+    color_mode = linecache.getline(dcol_path,1).lstrip("dcol_mode=").lstrip("\"")
+    color_mode = color_mode.rstrip("\"\n")
+    return color_mode

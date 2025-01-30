@@ -86,7 +86,7 @@ window#waybar.hidden {
   border-color: @accent1_1;
   border-width: 1px;
   padding: 0px 6px;
-  margin: 6px 3px;
+  margin: 6px 6px;
   color: @text2;
   background-color: @accent4_1;
 }
@@ -102,13 +102,13 @@ window#waybar.hidden {
   background-color: @accent4_1;
 }
 
-#hardware {
+#right_group {
   border-radius: 8px;
   border-style: solid;
   border-color: @accent1_1;
   border-width: 1px;
   padding: 0px 6px;
-  margin: 6px 3px;
+  margin: 6px 6px;
   color: @text2;
   background-color: @accent4_1;
 }

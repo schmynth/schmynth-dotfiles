@@ -5,7 +5,7 @@
     "height": 20,
     "modules-left": ["group/left_group"],
     "modules-center": ["clock"],
-    "modules-right": ["group/hardware"],
+    "modules-right": ["group/right_group"],
     "custom/appmenu": {
         	"format": " \uf303 ",
         	"rotate": 0,
@@ -110,7 +110,7 @@
     },
     // System
      "custom/system": {
-         "format": "  system: ",
+         "format": "  system",
          "tooltip": false
      },
  
@@ -160,22 +160,29 @@
      // Group Hardware
      "group/hardware": {
          "orientation": "horizontal",
-         //"drawer": {
-         //    "transition-duration": 300,
-         //    "children-class": "not-memory",
-         //    "transition-left-to-right": false
-         //},
+         "drawer": {
+             "transition-duration": 300,
+             "children-class": "not-memory",
+             "transition-left-to-right": true
+         },
 		"modules": [
-			"hyprland/language",
-			"pulseaudio",
-			"pulseaudio/slider",
 			"custom/system",
 			"disk",
 			"cpu",
 			"memory",
-			"network",
-			"custom/exit"
+			"network"
 		]
-     }
+    },
+
+    "group/right_group": {
+        "orientation" : "horizontal",
+        "modules":[
+            "hyprland/language",
+            "pulseaudio",
+            "pulseaudio/slider",
+            "group/hardware",
+            "custom/exit"
+        ]
+    }
        
 }
