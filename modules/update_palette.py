@@ -22,8 +22,8 @@ def update_palette(path):
     print("old data:\n", data)
     # check if line contains "value0 #..."
     for color in color_codes_dict:
-
-        data_list = r.replace_color_rgba(data, color, color_codes_dict[color])
+        data_list = r.replace_color(data, color, color_codes_dict[color], "rgba", ";")
+        # data_list = r.replace_color_rgba(data, color, color_codes_dict[color])
         data_str = ""
 
     # convert file data from list to string for write()-function
@@ -37,8 +37,4 @@ def update_palette(path):
         f.write(data_str)
     f.close()
 
-
-def test_function(string1, string2):
-    string = string1 + string2
-    print(string)
 

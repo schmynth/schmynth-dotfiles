@@ -3,8 +3,13 @@ import os
 from . import extract_colors as e
 
 cwd = os.getcwd() + "/modules/"
-settings_path = "/home/sebastian/.var/app/com.visualstudio.code/config/Code/User/"
-settings_file = settings_path + "settings.json"
+
+# get vs code config file
+vscode_settings_path = "/home/sebastian/.var/app/com.visualstudio.code/config/Code/User/"
+vscode_settings_file = vscode_settings_path + "settings.json"
+
+# get alacritty config file
+alacritty_config_file = os.getcwd() + ".alacritty.toml"
 
 # so far only prints values
 def update_json_property(settings_file, property_group, property_name, property_value):
@@ -40,9 +45,15 @@ vscode_colors = {"foreground":"text1",
 def update_vscode_colors(color_mode):
     color_palette_dict = e.get_color_codes_dict_rgb()
     for key in vscode_colors:
-        update_json_property(settings_file, "workbench.colorCustomizations", key, "#" + color_palette_dict[vscode_colors[key]])
+        update_json_property(vscode_settings_file, "workbench.colorCustomizations", key, "#" + color_palette_dict[vscode_colors[key]])
     if color_mode == "light":
-        update_json_property(settings_file, 0, "workbench.colorTheme", "Default Light Modern")
+        update_json_property(vscode_settings_file, 0, "workbench.colorTheme", "Default Light Modern")
     else:
-        update_json_property(settings_file, 0, "workbench.colorTheme", "Default Dark+")
+        update_json_property(vscode_settings_file, 0, "workbench.colorTheme", "Default Dark+")
+
+
+def update_alacritty_colors(color_mode):
+    color_palette_dict = e.get_color_codes_dict_rgb()
+    # with open(alacritty_config_file, "r", encoding='utf-8'):
+
         
