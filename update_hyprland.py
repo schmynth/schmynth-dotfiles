@@ -1,5 +1,5 @@
 import modules.update_palette as up
-import modules.update_vscode_colors as uvs
+import modules.update_app_colors as uac
 import modules.extract_colors as e
 import subprocess
 import os
@@ -17,4 +17,4 @@ color_mode = e.get_color_mode()
 
 # update hyprland and applications
 restart_waybar()
-uvs.update_vscode_colors(color_mode)
+uac.update_vscode_colors(color_mode)
