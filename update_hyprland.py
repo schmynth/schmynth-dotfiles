@@ -18,3 +18,4 @@ color_mode = e.get_color_mode()
 # update hyprland and applications
 restart_waybar()
 uac.update_vscode_colors(color_mode)
+uac.update_alacritty_colors(color_mode)

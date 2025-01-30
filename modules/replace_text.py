@@ -10,10 +10,10 @@ def remove_color_code(line, mode):
         mode (str): color code format (rgb or rgba)
     """
     if mode == "rgb":
-        stripped_line = line.rstrip("1234567890ABCDEF;\\\n")
+        stripped_line = line.rstrip("1234567890ABCDEF;\\\n\"")
         return stripped_line
     elif mode == "rgba":
-        stripped_line = line.rstrip("1234567890ABCDEFrgba;\n()#,\\.")
+        stripped_line = line.rstrip("1234567890ABCDEFrgba;\n()#,\\.\"")
         return stripped_line
     else:
         return "wrong color format specified."

@@ -135,7 +135,7 @@ def get_color_codes_dict_rgba(opacity):
         # check if line is interesting
         if current_line_number in lines_color_ln.keys():
             current_code = line[16:]
-            current_code = current_code.rstrip("\n\"1\\);.")
+            current_code = current_code.rstrip("\n\"1\\\);.")
             current_code = current_code + str(opacity) + ")"
             #current_code = current_code.lstrip("#")
             color_codes_dict.update({lines_color_ln[current_line_number] : current_code})

@@ -1,6 +1,7 @@
 import json
 import os
 from . import extract_colors as e
+from . import replace_text as r
 
 cwd = os.getcwd() + "/modules/"
 
@@ -9,7 +10,7 @@ vscode_settings_path = "/home/sebastian/.var/app/com.visualstudio.code/config/Co
 vscode_settings_file = vscode_settings_path + "settings.json"
 
 # get alacritty config file
-alacritty_config_file = os.getcwd() + ".alacritty.toml"
+alacritty_config_file = os.getcwd() + "/.alacritty.toml"
 
 # so far only prints values
 def update_json_property(settings_file, property_group, property_name, property_value):
@@ -51,9 +52,24 @@ def update_vscode_colors(color_mode):
     else:
         update_json_property(vscode_settings_file, 0, "workbench.colorTheme", "Default Dark+")
 
+alacritty_colors = {
+    "background" : "primary1"
+}
 
 def update_alacritty_colors(color_mode):
     color_palette_dict = e.get_color_codes_dict_rgb()
-    # with open(alacritty_config_file, "r", encoding='utf-8'):
+    with open(alacritty_config_file, "r", encoding='utf-8') as file:
+        data = file.readlines()
+    file.close()
+
+    for key in alacritty_colors:
+        data_list = r.replace_color(data, key, color_palette_dict[alacritty_colors[key]], "rgb", "\"")
+        data_str = ""
+    for word in data_list:
+        data_str = data_str + word
+
+    with open(alacritty_config_file,"w", encoding='utf-8') as file:
+        file.write(data_str)
+    file.close()
 
         
