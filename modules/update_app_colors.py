@@ -6,7 +6,7 @@ from . import replace_text as r
 cwd = os.getcwd() + "/modules/"
 
 # get vs code config file
-vscode_settings_path = "/home/sebastian/.var/app/com.visualstudio.code/config/Code/User/"
+vscode_settings_path = "/home/sebastian/.config/Code/User/"
 vscode_settings_file = vscode_settings_path + "settings.json"
 
 # get alacritty config file

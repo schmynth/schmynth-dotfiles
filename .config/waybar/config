@@ -36,10 +36,13 @@
         "class<kitty>": "",
         "class<org.kde.konsole>": "",
         "code": "",
+        "title<.*darktable.*>": "", // Windows whose titles contain "darktable"
+        "title<.*steam.*>": "", // Windows whose titles contain "steam"
+        "title<.*lutris.*>": "󱎓", // Windows whose titles contain "lutris"
         "class<thunderbird>": "",
         "class<vlc>": "",
         "class<thunar>": "",
-        "class<org.gnome.Nautilus>": "",
+        "class<org.gnome.Nautilus>": "",
         "class<org.kde.dolphin>": "",
         "class<org.kde.kate>": "",
         "class<libreoffice-draw>": "",
