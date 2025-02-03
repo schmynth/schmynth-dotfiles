@@ -67,8 +67,7 @@ mkdir -p /home/$USER/.config/kitty
 ln -sf $SCRIPT_PATH/.config/kitty/kitty.conf /home/$USER/.config/kitty/kitty.conf
 
 echo "linking rofi config file..."
-mkdir -p /home/$USER/.config/rofi
-ln -sf $SCRIPT_PATH/.config/rofi/config.rasi /home/$USER/.config/rofi/config.rasi
+ln -sf $SCRIPT_PATH/.config/rofi/ /home/$USER/.config/
 
 echo "linking scripts..."
 ln -sf $SCRIPT_PATH/.scripts /home/$USER/
