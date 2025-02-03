@@ -5,13 +5,13 @@
  */
 
 * {
-    foreground:  #CCEFFF;
+    foreground:  #CCE6FF;
     backlight:   #ee0000FF;
     background-color:  transparent;
-	list-background-transparent: #0B1C24aa;
-	border-color: #294552;
+	list-background-transparent: #172533aa;
+	border-color: #293D52;
 
-	selection-transparent: #8F8157aa;
+	selection-transparent: #8F6457aa;
 	text2: #FFFFFF;
     dark: #1c1c1c;
     // Black
@@ -49,7 +49,7 @@
     lightwhite:     #ddccbb;
     //
     // Bold, Italic, Underline
-    highlight:     underline bold #CCEFFF;
+    highlight:     underline bold #CCE6FF;
 
     transparent: rgba(0,0,0,0);
     font: "FontAwesome 11";
