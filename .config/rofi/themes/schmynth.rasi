@@ -1,20 +1,20 @@
 /**
  * ROFI Color theme
- * User: schmynth 
- * Copyright: Sebatian Schmidt 
+ * User: Qball
+ * Copyright: Dave Davenport
  */
-// @import "/home/sebastian/.config/rofi/themes/colors.rasi";
 
 * {
-    foreground:  #ffeedd;
-    backlight:   #00ffee11;
+    foreground:  #CCEFFF;
+    backlight:   #ee2222dd;
     background-color:  transparent;
+	list-background-transparent: #577D8Faa;
+	border-color: #294552;
+
+	selection-transparent: #8F8157aa;
+	text2: #FFFFFF;
     dark: #1c1c1c;
-
-    // Bold, Italic, Underline
-    highlight:     underline bold #ffffff;
     // Black
-
     black:       #3d352a;
     lightblack:  #554444;
     tlightblack:  #554444cc;
@@ -48,9 +48,11 @@
     white:      #bbaa99;
     lightwhite:     #ddccbb;
     //
+    // Bold, Italic, Underline
+    highlight:     underline bold #CCEFFF;
 
     transparent: rgba(0,0,0,0);
-    font: "Fira Code 10";
+    font: "FontAwesome 11";
 }
 window {
     location: center;
@@ -58,7 +60,7 @@ window {
     transparency: "real";
     padding: 0px;
     border:  0px;
-    border-radius: 8px;
+    border-radius: 10px;
     color: @magenta;
     background-color: @transparent;
     spacing: 0;
@@ -70,7 +72,7 @@ mainbox {
     children: [ inputbar, message, listview ];
 }
 message {
-    border-color: @foreground;
+    border-color: @border-color;
     border:  0px 2px 2px 2px;
 //    border-radius: 10px;
     padding: 5;
@@ -81,13 +83,13 @@ message {
     color: @black;
 }
 inputbar {
-    color: @foreground;
+    color: @text2;
     padding: 11px;
-    background-color: @tlightblack;
+    background-color: @list-background-transparent;
     border: 2px 2px 2px 2px;
     border-radius:  15px 15px 0px 0px;
-    border-color: @foreground;
-    font: "Nerd Font 28";
+    border-color: @border-color;
+    font: "Source Code Pro 18";
 }
 entry,prompt,case-indicator {
     text-font: inherit;
@@ -99,9 +101,9 @@ prompt {
 listview {
     padding: 8px;
     border-radius: 0px 0px 15px 15px;
-    border-color: @foreground;
+    border-color: @border-color;
     border: 0px 2px 2px 2px;
-    background-color: #1c1c1ccc;
+    background-color: @list-background-transparent; //#1c1c1ccc;
     dynamic: false;
     lines: 10;
 }
@@ -119,7 +121,7 @@ element-text {
     text-color:       inherit;
 }
 element selected.normal {
-    background-color: @red;
+    background-color: @selection-transparent;
 }
 element normal active {
     foreground: @lightblue;
@@ -178,7 +180,7 @@ button selected normal {
 error-message {
     expand: true;
     background-color: red;
-    border-color: darkred;
+    border-color: @red;
     border: 2px;
     padding: 1em;
 }

@@ -10,7 +10,7 @@ def remove_color_code(line, mode):
         mode (str): color code format (rgb or rgba)
     """
     if mode == "rgb":
-        stripped_line = line.rstrip("1234567890ABCDEF;\\\n\"")
+        stripped_line = line.rstrip("1234567890ABCDEFabcdef;\\\n\"")
         return stripped_line
     elif mode == "rgba":
         stripped_line = line.rstrip("1234567890ABCDEFrgba;\n()#,\\.\"")
@@ -20,7 +20,7 @@ def remove_color_code(line, mode):
 
 def replace_color(file_data, color_name, replacement_color, mode, last_char):
     """replaces named color code in data list (read file) with code provided
-    as argument.
+    as argument. Searches name in line thus independent of data structure.
 
     Args:
         file_data (list): file data in list
@@ -32,7 +32,7 @@ def replace_color(file_data, color_name, replacement_color, mode, last_char):
     """
     current_line_number = 1
     for line in file_data:
-        if color_name in line:
+        if color_name in line and "@" not in line:  # don't overwrite variables
             # print('value1 # is in line {}'.format(current_line_number))
             stripped_line = remove_color_code(line, mode)
             # print('stripped line is: ', stripped_line)

@@ -66,6 +66,20 @@ echo "linking kitty config file..."
 mkdir -p /home/$USER/.config/kitty
 ln -sf $SCRIPT_PATH/.config/kitty/kitty.conf /home/$USER/.config/kitty/kitty.conf
 
+VSCode_flatpak_config_path=.var/app/com.visualstudio.code/config/Code/User
+VSCode_std_config_path=.config/Code/User
+
+echo "linking vs Code config file..."
+if [ -d "/home/$USER/$VSCode_flatpak_config_path" ]; then
+    ln -sf $SCRIPT_PATH/.config/VSCode/settings.json /home/$USER/$VSCode_flatpak_config_path/settings.json
+    echo "VSCode flatpak config file detected."
+elif [ -d "/home/$USER/$VSCode_std_config_path" ]; then
+    ln -sf $SCRIPT_PATH/.config/VSCode/settings.json /home/$USER/$VSCode_std_config_path/settings.json
+    echo "VSCode config file in ~/.config/Code/User detected."
+else
+    echo "VSCode settings.json not found. Is VSCode installed?"
+fi
+
 echo "linking rofi config file..."
 ln -sf $SCRIPT_PATH/.config/rofi/ /home/$USER/.config/
 
