@@ -4,10 +4,15 @@ from . import extract_colors as e
 from . import replace_text as r
 
 cwd = os.getcwd() + "/modules/"
+home_dir = os.environ['HOME']
 
 # get vs code config file
-vscode_settings_path = "/home/sebastian/.config/Code/User/"
-vscode_settings_file = vscode_settings_path + "settings.json"
+if os.path.isfile(home_dir + "/.config/Code/User/settings.json"):
+    vscode_settings_file = "/home/sebastian/.config/Code/User/settings.json"
+elif os.path.isfile(home_dir + "/.var/app/com.visualstudio.code/config/Code/User/settings.json"):
+    vscode_settings_file = home_dir + "/.var/app/com.visualstudio.code/config/Code/User/settings.json"
+else:
+    print("No VS code settings file found.")
 
 # get alacritty config file
 alacritty_config_file = os.getcwd() + "/.alacritty.toml"
