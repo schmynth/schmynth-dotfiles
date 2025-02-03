@@ -58,3 +58,11 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 set tabstop=4
+" set vim transparent:
+hi NonText guifg=#44cc44 guibg=NONE ctermbg=none
+hi Normal guibg=NONE ctermbg=NONE
+hi Comment ctermbg=NONE
+hi Identifier ctermbg=NONE
+hi Constant ctermbg=NONE
+hi SpecialKey ctermbg=NONE
+hi Title ctermbg=NONE 

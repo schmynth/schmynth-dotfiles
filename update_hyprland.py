@@ -26,6 +26,9 @@ set_gtk_theme(color_mode)
 
 # update hyprland and applications
 restart_waybar()
-# disabled vs code because config file does not contain the keys yet
-# uac.update_vscode_colors(color_mode)
+
+
 uac.update_alacritty_colors(color_mode)
+uac.update_vscode_colors(color_mode)
+uac.update_alacritty_colors(color_mode)
+uac.update_rofi_colors(color_mode)

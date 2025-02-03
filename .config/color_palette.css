@@ -1,52 +1,51 @@
 /* Group 1 */
-@define-color primary1 rgba(11,28,36,0.5);
+@define-color primary1 rgba(23,37,51,0.5);
 @define-color text1 rgba(255,255,255,0.5);
-@define-color accent1_1 rgba(41,69,82,0.5);
-@define-color accent2_1 rgba(58,91,107,0.5);
-@define-color accent3_1 rgba(75,109,125,0.5);
-@define-color accent4_1 rgba(87,125,143,0.5);
-@define-color accent5_1 rgba(101,143,163,0.5);
-@define-color accent6_1 rgba(122,171,194,0.5);
-@define-color accent7_1 rgba(154,205,230,0.5);
-@define-color accent8_1 rgba(170,217,240,0.5);
-@define-color accent9_1 rgba(204,239,255,0.5);
+@define-color accent1_1 rgba(41,61,82,0.5);
+@define-color accent2_1 rgba(58,82,107,0.5);
+@define-color accent3_1 rgba(75,100,125,0.5);
+@define-color accent4_1 rgba(87,115,143,0.5);
+@define-color accent5_1 rgba(101,132,163,0.5);
+@define-color accent6_1 rgba(122,158,194,0.5);
+@define-color accent7_1 rgba(154,192,230,0.5);
+@define-color accent8_1 rgba(170,205,240,0.5);
+@define-color accent9_1 rgba(204,230,255,0.5);
 
 /* Group 2  */
-@define-color primary2 rgba(60,97,98,0.5);
+@define-color primary2 rgba(72,73,86,0.5);
 @define-color text2 rgba(255,255,255,0.5);
-@define-color accent1_2 rgba(41,81,82,0.5);
-@define-color accent2_2 rgba(58,106,107,0.5);
-@define-color accent3_2 rgba(75,124,125,0.5);
-@define-color accent4_2 rgba(87,141,143,0.5);
-@define-color accent5_2 rgba(101,162,163,0.5);
-@define-color accent6_2 rgba(122,192,194,0.5);
-@define-color accent7_2 rgba(154,228,230,0.5);
-@define-color accent8_2 rgba(170,238,240,0.5);
-@define-color accent9_2 rgba(204,254,255,0.5);
+@define-color accent1_2 rgba(41,44,82,0.5);
+@define-color accent2_2 rgba(58,61,107,0.5);
+@define-color accent3_2 rgba(75,79,125,0.5);
+@define-color accent4_2 rgba(87,91,143,0.5);
+@define-color accent5_2 rgba(101,106,163,0.5);
+@define-color accent6_2 rgba(122,127,194,0.5);
+@define-color accent7_2 rgba(154,159,230,0.5);
+@define-color accent8_2 rgba(170,175,240,0.5);
+@define-color accent9_2 rgba(204,208,255,0.5);
 
 /* Group 3  */
-@define-color primary3 rgba(136,160,150,0.5);
-@define-color text3 rgba(17,17,17,0.5);
-@define-color accent1_3 rgba(41,82,65,0.5);
-@define-color accent2_3 rgba(58,107,87,0.5);
-@define-color accent3_3 rgba(75,125,104,0.5);
-@define-color accent4_3 rgba(87,143,120,0.5);
-@define-color accent5_3 rgba(101,163,137,0.5);
-@define-color accent6_3 rgba(122,194,164,0.5);
-@define-color accent7_3 rgba(154,230,198,0.5);
-@define-color accent8_3 rgba(170,240,211,0.5);
-@define-color accent9_3 rgba(204,255,234,0.5);
+@define-color primary3 rgba(122,109,119,0.5);
+@define-color text3 rgba(255,255,255,0.5);
+@define-color accent1_3 rgba(82,41,72,0.5);
+@define-color accent2_3 rgba(107,58,96,0.5);
+@define-color accent3_3 rgba(125,75,113,0.5);
+@define-color accent4_3 rgba(143,87,130,0.5);
+@define-color accent5_3 rgba(163,101,149,0.5);
+@define-color accent6_3 rgba(194,122,177,0.5);
+@define-color accent7_3 rgba(230,154,212,0.5);
+@define-color accent8_3 rgba(240,170,224,0.5);
+@define-color accent9_3 rgba(255,204,243,0.5);
 
 /* Group 4 */
-@define-color primary4 rgba(229,223,204,0.5);
-@define-color text4 rgba(6,6,6,0.5);
-@define-color accent1_4 rgba(82,72,41,0.5);
-@define-color accent2_4 rgba(107,95,58,0.5);
-@define-color accent3_4 rgba(125,113,75,0.5);
-@define-color accent4_4 rgba(143,129,87,0.5);
-@define-color accent5_4 rgba(163,148,101,0.5);
-@define-color accent6_4 rgba(194,177,122,0.5);
-@define-color accent7_4 rgba(230,211,154,0.5);
-@define-color accent8_4 rgba(240,223,170,0.5);
-@define-color accent9_4 rgba(255,243,204,0.5);
-
+@define-color primary4 rgba(194,170,163,0.5);
+@define-color text4 rgba(12,12,12,0.5);
+@define-color accent1_4 rgba(82,50,41,0.5);
+@define-color accent2_4 rgba(107,69,58,0.5);
+@define-color accent3_4 rgba(125,86,75,0.5);
+@define-color accent4_4 rgba(143,100,87,0.5);
+@define-color accent5_4 rgba(163,115,101,0.5);
+@define-color accent6_4 rgba(194,138,122,0.5);
+@define-color accent7_4 rgba(230,171,154,0.5);
+@define-color accent8_4 rgba(240,186,170,0.5);
+@define-color accent9_4 rgba(255,216,204,0.5);
