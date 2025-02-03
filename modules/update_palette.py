@@ -32,7 +32,7 @@ def update_palette(path):
 
 
     print('new data:\n', data)
-    # not overwriting color_palette.css for now, hence output_file.txt
+
     with open(output_file, "w") as f:
         f.write(data_str)
     f.close()

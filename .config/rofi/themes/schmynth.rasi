@@ -8,7 +8,7 @@
     foreground:  #CCEFFF;
     backlight:   #ee2222dd;
     background-color:  transparent;
-	list-background-transparent: #577D8Faa;
+	list-background-transparent: #0B1C24aa;
 	border-color: #294552;
 
 	selection-transparent: #8F8157aa;

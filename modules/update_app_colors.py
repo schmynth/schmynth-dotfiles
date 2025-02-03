@@ -115,16 +115,16 @@ rofi_theme_file = home_dir + "/.config/rofi/themes/schmynth.rasi"
 rofi_color_map = {
     "foreground" : "accent9_1", 
     "highlight" : "accent9_1",
-    "list-background-transparent" : "accent4_1",
+    "list-background-transparent" : "primary1",
     "selection-transparent" : "accent4_4",
     "border-color" : "accent1_1",
     "text2" : "text2"
 }
 
-opacity_hex = "aa"
 
 def update_rofi_colors(color_mode):
     color_palette_dict = e.get_color_codes_dict_rgb() # has to be changed when merged with refactored version, doesn't it?
+    opacity_hex = "aa"
 
     with open(rofi_theme_file,"r", encoding='utf-8') as file:
         data = file.readlines()
@@ -132,10 +132,10 @@ def update_rofi_colors(color_mode):
 
     for key in rofi_color_map:
         if "transparent" in key:
-            data_list = r.replace_color(data, key, color_palette_dict[rofi_color_map[key]], "rgb", opacity_hex + ";")
+            data_list = r.replace_color(data, key, color_palette_dict[rofi_color_map[key]], "rgb", opacity_hex + ";", ignoreLinesWithAt=True)
             data_str = ""
         else:
-            data_list = r.replace_color(data, key, color_palette_dict[rofi_color_map[key]], "rgb", ";")
+            data_list = r.replace_color(data, key, color_palette_dict[rofi_color_map[key]], "rgb", ";", ignoreLinesWithAt=True)
             data_str = ""
     for word in data_list:
         data_str = data_str + word
