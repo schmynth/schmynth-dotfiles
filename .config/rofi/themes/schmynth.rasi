@@ -6,7 +6,7 @@
 
 * {
     foreground:  #CCEFFF;
-    backlight:   #ee2222dd;
+    backlight:   #ee0000FF;
     background-color:  transparent;
 	list-background-transparent: #0B1C24aa;
 	border-color: #294552;
@@ -57,8 +57,9 @@
 window {
     location: center;
     anchor:   center;
+	width: 500px;
     transparency: "real";
-    padding: 0px;
+    padding: 24px;
     border:  0px;
     border-radius: 10px;
     color: @magenta;
@@ -106,18 +107,19 @@ listview {
     background-color: @list-background-transparent; //#1c1c1ccc;
     dynamic: false;
     lines: 10;
+	columns: 1;
 }
 element {
     padding: 3px;
     vertical-align: 0.5;
 //    border: 2px;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: transparent;
     color: @foreground;
     font:inherit;
 }
 element-text {
-    background-color: inherit;
+    background-color: transparent;
     text-color:       inherit;
 }
 element selected.normal {

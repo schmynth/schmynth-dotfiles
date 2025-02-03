@@ -63,7 +63,7 @@ configuration {
 /*	display-drun: ;*/
 /*	display-combi: ;*/
 /*	display-keys: ;*/
-/*	display-filebrowser: ;*/
+	display-filebrowser:"files" ;
 /*	kb-primary-paste: "Control+V,Shift+Insert";*/
 /*	kb-secondary-paste: "Control+v,Insert";*/
 /*	kb-clear-line: "Control+w";*/
@@ -149,4 +149,4 @@ configuration {
       sorting-method:    "name";
   }
 }
-@theme "~/.config/rofi/themes/schmynth.rasi"
+@theme "themes/schmynth.rasi"
