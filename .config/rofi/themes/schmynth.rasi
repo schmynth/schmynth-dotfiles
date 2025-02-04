@@ -24,7 +24,7 @@ window {
     anchor:   center;
 	width: 700px;
     transparency: "real";
-    padding: 40px;
+    padding: 0px;
     border:  0px;
     border-radius: 10px;
     color: @magenta;
