@@ -15,7 +15,7 @@
 
 # find full path of script:
 SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-set -x #echo on
+# set -x #echo on
 
 echo "linking .zshrc..."
 ln -sf $SCRIPT_PATH/.zshrc /home/$USER/.zshrc
