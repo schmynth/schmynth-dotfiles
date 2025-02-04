@@ -8,12 +8,13 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run,filebrowser";
+	modi:                       "drun,window,run,filebrowser,rofi-power-menu";
     show-icons:                 false;
     display-drun:               "  Apps";
     display-run:                " Run";
     display-filebrowser:        " Files";
     display-window:             " Windows";
+	display-rofi-power-menu:			"⏻ Power from here";
 	drun-display-format:        "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
 	window-format:              "{w} · {c} · {t}";
 }
@@ -21,7 +22,7 @@ configuration {
 window {
     location: center;
     anchor:   center;
-	width: 500px;
+	width: 700px;
     transparency: "real";
     padding: 40px;
     border:  0px;
