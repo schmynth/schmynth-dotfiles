@@ -1,7 +1,7 @@
 set nocompatible              " be iMproved, required
 set number
 filetype off                  " required
-
+"
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -58,11 +58,30 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 set tabstop=4
+"
 " set vim transparent:
+hi Boolean ctermbg=NONE
+hi Comment ctermbg=NONE
+hi Constant ctermbg=NONE
+hi Character ctermbg=NONE
+hi Delimiter ctermbg=NONE
+hi Directory ctermbg=NONE
+hi Error ctermbg=NONE
+hi Float ctermbg=NONE
+hi Function ctermbg=NONE
+hi Identifier ctermbg=NONE
+hi Ignore ctermbg=NONE
+hi Keyword ctermbg=NONE
 hi NonText guifg=#44cc44 guibg=NONE ctermbg=none
 hi Normal guibg=NONE ctermbg=NONE
-hi Comment ctermbg=NONE
-hi Identifier ctermbg=NONE
-hi Constant ctermbg=NONE
+hi Number ctermbg=NONE
+hi Operator ctermbg=NONE
+hi PreProc ctermbg=NONE
+hi Special ctermbg=NONE
 hi SpecialKey ctermbg=NONE
+hi Statement ctermbg=NONE
 hi Title ctermbg=NONE 
+hi Type ctermbg=NONE
+hi Underlined ctermbg=NONE
+hi String ctermbg=NONE
+hi LineNr ctermbg=NONE

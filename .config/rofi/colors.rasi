@@ -2,7 +2,7 @@
     foreground:  #CCEFFF;
     backlight:   #ee03777F;
     background-color:  transparent;
-	list-background-transparent: #0B1C24aa;
+	list-background-transparent: #577D8Faa;
 	border-color: #294552;
 
 	selection-transparent: #8F8157aa;
@@ -47,5 +47,5 @@
     highlight:     underline bold #CCEFFF;
 
     transparent: rgba(2,0,0,0);
-    font: "FontAwesome 9";
+    font: "JetBrainsMono Nerd Font 9";
 }

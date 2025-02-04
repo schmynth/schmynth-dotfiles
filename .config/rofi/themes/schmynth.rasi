@@ -34,7 +34,7 @@ window {
 }
 mainbox {
     spacing: 0;
-    border: 2px;
+    border: 1px;
     border-radius: 12px;
     children: [ inputbar, message,mode-switcher, listview];
 }
@@ -44,15 +44,15 @@ mode-switcher{
     spacing:                     8px;
     margin:                      0px;
     padding:                     0px;
-    border:                      2px 2px 2px 2px solid;
+    border:                      0px solid;
     border-radius:               0px;
     border-color:                @border-color;
     background-color: @list-background-transparent;
     text-color:                  @foreground;
 }
 button {
-    padding:                     5px 10px;
-    border:                      2px solid;
+    padding:                     5px 4px;
+    border:                      1px ;
     border-radius:               20px;
     border-color:                @border-color;
     background-color:            @alternate-background;
@@ -66,16 +66,18 @@ button selected {
 /*****----- Message -----*****/
 message {
     border-color: @border-color;
-    border:  0px 2px 0px 0px;
+    border:  0px 0px 0px 0px;
+    color: @text0;
 //    border-radius: 10px;
     padding: 5;
-    color: @text2;
     background-color: @list-background-transparent;
 }
+
 message {
-    font: "Source Code Pro 8";
+    font: "JetBrainsMono Nerd Font 8";
     color: @text2;
 }
+
 inputbar {
     color: @text2;
     padding: 11px;
@@ -83,11 +85,11 @@ inputbar {
     border: 0px;
     border-radius:  11px 11px 0px 0px;
     border-color: @border-color;
-    font: "Source Code Pro 18";
+    font: "JetBrainsMono Nerd Font 18";
 }
 entry,prompt,case-indicator {
     text-font: inherit;
-    text-color:inherit;
+    text-color: @text2;
 }
 prompt {
     margin:     0px 0.3em 0em 0em ;
@@ -111,7 +113,7 @@ element {
     border-color: @border-color;
     background-color: transparent;
     color: @foreground;
-    font:inherit;
+    font: "JetBrainsMono Nerd Font 8";
 }
 element-text {
     background-color: transparent;
@@ -119,7 +121,7 @@ element-text {
 }
 element selected.normal {
     background-color: @selection-transparent;
-    border: 2px;
+    border: 1px;
 }
 element normal active {
     foreground: @lightblue;
@@ -160,10 +162,10 @@ mode-switcher {
     border: 0px 0px 0px 0px;
 }
 button {
-    font: "FontAwesome 10";
+    font: "JetBrainsMono Nerd Font 10";
     padding: 4px 2px;
     margin: 8px;
-    border: 2px 2px 2px 2px;
+    border: 1px;
     border-radius: 4px 4px 4px 4px;
     background-color: transparent;
     border-color: @border-color;
@@ -172,7 +174,6 @@ button {
 }
 button selected normal {
     color: @dark;
-    border: 2px 2px 2px 2px;
     background-color: @selection-transparent;
     border-color: @border-color;
 }

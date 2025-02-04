@@ -115,7 +115,7 @@ rofi_color_file = home_dir + "/.config/rofi/colors.rasi"
 rofi_color_map = {
     "foreground" : "accent9_1", 
     "highlight" : "accent9_1",
-    "list-background-transparent" : "primary1",
+    "list-background-transparent" : "accent4_1",
     "selection-transparent" : "accent4_4",
     "border-color" : "accent1_1",
     "text1" : "text1",
