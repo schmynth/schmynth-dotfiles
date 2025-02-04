@@ -11,12 +11,24 @@ restart_waybar_script_path = dotfiles_rootpath + "/.scripts/restart_waybar.sh"
 def restart_waybar():
     subprocess.call(restart_waybar_script_path, shell=True)
 
+def set_gtk_theme(color_mode):
+    if color_mode == "light":
+        subprocess.call("gsettings set org.gnome.desktop.interface color-scheme prefer-light", shell=True)
+    elif color_mode == "dark":
+        subprocess.call("gsettings set org.gnome.desktop.interface color-scheme prefer-dark", shell=True)
+    else:
+        print("color_mode unsupported.")
+
 # get color info from new wallpaper
 up.update_palette(palette_path)
 color_mode = e.get_color_mode()
+set_gtk_theme(color_mode)
 
 # update hyprland and applications
 restart_waybar()
+
+
+uac.update_alacritty_colors(color_mode)
 uac.update_vscode_colors(color_mode)
 uac.update_alacritty_colors(color_mode)
 uac.update_rofi_colors(color_mode)
