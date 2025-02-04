@@ -1,0 +1,51 @@
+* {
+    foreground:  #CCEFFF;
+    backlight:   #ee03777F;
+    background-color:  transparent;
+	list-background-transparent: #0B1C24aa;
+	border-color: #294552;
+
+	selection-transparent: #8F8157aa;
+	text0: #FFFFFF;
+    text2: #FFFFFF;
+    dark: #1c1c1c;
+    // Black
+    black:       #1d352a;
+    lightblack:  #554442;
+    tlightblack:  #554442cc;
+    //
+    // Red
+    red:         #cd3c5c;
+    lightred:    #cc5531;
+    //
+    // Green
+    green:       #84af80;
+    lightgreen:  #86cc22;
+    //
+    // Yellow
+    yellow:      #e6ae5b;
+    lightyellow:     #ffa73d;
+    //
+    // Blue
+    blue:      #6493ed;
+    lightblue:     #85ceeb;
+    //
+    // Magenta
+    magenta:      #deb885;
+    lightmagenta:     #996598;
+    //
+    // Cyan
+    cyan:      #b2c4de;
+    tcyan:      #ccb2c4de;
+    lightcyan:     #b2c4de;
+    //
+    // White
+    white:      #bbaa97;
+    lightwhite:     #ddccbb;
+    //
+    // Bold, Italic, Underline
+    highlight:     underline bold #CCEFFF;
+
+    transparent: rgba(2,0,0,0);
+    font: "FontAwesome 9";
+}

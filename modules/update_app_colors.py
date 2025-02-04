@@ -109,8 +109,8 @@ def update_alacritty_colors(color_mode):
     file.close()
 
         
-# get rofi theme file path
-rofi_theme_file = home_dir + "/.config/rofi/themes/schmynth.rasi"
+# get rofi color file path
+rofi_color_file = home_dir + "/.config/rofi/colors.rasi"
 
 rofi_color_map = {
     "foreground" : "accent9_1", 
@@ -118,6 +118,7 @@ rofi_color_map = {
     "list-background-transparent" : "primary1",
     "selection-transparent" : "accent4_4",
     "border-color" : "accent1_1",
+    "text1" : "text1",
     "text2" : "text2"
 }
 
@@ -126,7 +127,7 @@ def update_rofi_colors(color_mode):
     color_palette_dict = e.get_color_codes_dict_rgb() # has to be changed when merged with refactored version, doesn't it?
     opacity_hex = "aa"
 
-    with open(rofi_theme_file,"r", encoding='utf-8') as file:
+    with open(rofi_color_file,"r", encoding='utf-8') as file:
         data = file.readlines()
     file.close()
 
@@ -140,6 +141,6 @@ def update_rofi_colors(color_mode):
     for word in data_list:
         data_str = data_str + word
 
-    with open(rofi_theme_file,"w", encoding='utf-8') as file:
+    with open(rofi_color_file,"w", encoding='utf-8') as file:
         file.write(data_str)
     file.close()
