@@ -76,8 +76,8 @@ bindkey '^[[1;5C' forward-word                                  #
 bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
-# ls -la with just Alt+l
-bindkey -s '\el' 'ls -la\n'
+# ls -la with just Alt+l (after killing the line)
+bindkey -s '\el' '^uls -la --color=auto\n'
 
 # History
 HISTSIZE=5000
