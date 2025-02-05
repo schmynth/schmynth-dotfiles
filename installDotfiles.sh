@@ -81,7 +81,7 @@ else
 fi
 
 echo "linking rofi config file..."
-ln -sf $SCRIPT_PATH/.config/rofi/ /home/$USER/.config/
+ln -sf $SCRIPT_PATH/.config/rofi /home/$USER/.config/
 
 echo "linking scripts..."
 ln -sf $SCRIPT_PATH/.scripts /home/$USER/
