@@ -59,14 +59,16 @@ au BufNewFile,BufRead *.py
 
 set tabstop=4
 "
-" set vim transparent:
+" set vim highlight groups transparent:
 hi Boolean ctermbg=NONE
 hi Comment ctermbg=NONE
 hi Constant ctermbg=NONE
 hi Character ctermbg=NONE
+hi Conditional ctermbg=NONE
 hi Delimiter ctermbg=NONE
 hi Directory ctermbg=NONE
 hi Error ctermbg=NONE
+hi ErrorMsg ctermbg=NONE
 hi Float ctermbg=NONE
 hi Function ctermbg=NONE
 hi Identifier ctermbg=NONE
@@ -77,11 +79,21 @@ hi Normal guibg=NONE ctermbg=NONE
 hi Number ctermbg=NONE
 hi Operator ctermbg=NONE
 hi PreProc ctermbg=NONE
+hi Question ctermbg=NONE
 hi Special ctermbg=NONE
 hi SpecialKey ctermbg=NONE
+hi SpellRare ctermbg=NONE
 hi Statement ctermbg=NONE
+hi StorageClass ctermbg=NONE
+hi TabLine ctermbg=NONE
+hi TabLineFill ctermbg=NONE
+hi TabLineSel ctermbg=NONE
 hi Title ctermbg=NONE 
+hi Todo ctermbg=NONE
 hi Type ctermbg=NONE
 hi Underlined ctermbg=NONE
 hi String ctermbg=NONE
 hi LineNr ctermbg=NONE
+hi vimGlobal ctermbg=NONE
+hi vimNormCmds ctermbg=NONE
+hi WildMenu ctermbg=NONE

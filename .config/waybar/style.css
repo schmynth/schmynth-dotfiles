@@ -110,7 +110,7 @@ window#waybar.hidden {
   padding: 0px 6px;
   margin: 6px 6px;
   color: @text2;
-  background-color: @accent4_1;
+  background-color: @accent4_1 ;
 }
 /*
 #custom-appmenu {

@@ -3,4 +3,4 @@ normal = { family = "Fira Code", style = "medium" }
 [window]
 opacity = 0.8
 [colors.primary]
-background = "#20555A"
+background = "#172533"
