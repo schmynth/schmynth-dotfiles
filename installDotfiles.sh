@@ -52,6 +52,11 @@ ln -sf $SCRIPT_PATH/.config/waybar/style.css /home/$USER/.config/waybar/style.cs
 ln -sf $SCRIPT_PATH/.config/color_palette.css /home/$USER/.config/waybar/color_palette.css
 ln -sf $SCRIPT_PATH/.config/color_palette.css /home/$USER/.config/wlogout/color_palette.css
 
+echo "linking swayosd config files..."
+ln -sf $SCRIPT_PATH/.config/swayosd /home/$USER/.config/
+ln -sf $SCRIPT_PATH/.config/color_palette.css /home/$USER/.config/swayosd/color_palette.css
+
+
 # echo "linking waypaper config file..."
 # mkdir -p /home/$USER/.config/waypaper
 # ln -sf $SCRIPT_PATH/.config/waypaper/config.ini /home/$USER/.config/waypaper/config.ini

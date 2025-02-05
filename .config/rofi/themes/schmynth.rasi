@@ -14,7 +14,7 @@ configuration {
     display-run:                " Run";
     display-filebrowser:        " Files";
     display-window:             " Windows";
-	display-rofi-power-menu:			"⏻ Power from here";
+/* power string has to be set from inside power menu script */
 	drun-display-format:        "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
 	window-format:              "{w} · {c} · {t}";
 }

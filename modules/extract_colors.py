@@ -71,17 +71,15 @@ def get_wallpaper_path():
     rel_wallpaper_path = linecache.getline('/home/sebastian/.config/waypaper/config.ini',5).lstrip("wallpaper = ~")
     wallpaper_path = '/home/sebastian' + rel_wallpaper_path
     wallpaper_path = wallpaper_path.strip("\n")
-    print("get_wallpaper_path() returned:'", wallpaper_path,"'")
+    # print("get_wallpaper_path() returned:'", wallpaper_path,"'")
     return wallpaper_path
 
-def run_wallbash():
-    command = "./.scripts/wallbash.sh" + ' ' + get_wallpaper_path()
-    wallpaper_path = get_wallpaper_path()
-    print("subprocess command: ", command)
+def run_wallbash(wallpaper_path):
+    command = "./.scripts/wallbash.sh" + ' ' + wallpaper_path
     if not os.path.isfile(wallpaper_path + '.dcol'):
         subprocess.call(command, shell=True)
 
-def get_color_codes_dict_rgb():
+def get_color_codes_dict_rgb(wallpaper_path):
     
     lines_color_ln = {v: k for k, v in lines_color_nl.items()}
 
@@ -89,12 +87,12 @@ def get_color_codes_dict_rgb():
     # if not, create it with wallbash
     #speculative_palette_path = get_wallpaper_path() + '.dcol'
     #if not os.path.isfile(speculative_palette_path):
-    run_wallbash()
 
     # def extract_color(group, color_class):
 
     # open palette file and save data to palette_data
-    palette_path = get_wallpaper_path() + '.dcol'
+    palette_path = wallpaper_path + '.dcol'
+
     with open(palette_path,'r', encoding='utf-8') as file:
         palette_data = file.readlines()
 
@@ -111,19 +109,18 @@ def get_color_codes_dict_rgb():
 
     return color_codes_dict
 
-def get_color_codes_dict_rgba(opacity):
+def get_color_codes_dict_rgba(opacity, wallpaper_path):
     lines_color_ln = {v+1: k for k, v in lines_color_nl.items()}
 
     # check if palette file (wallpaper.jpg.dcol) exists
     # if not, create it with wallbash
     #speculative_palette_path = get_wallpaper_path() + '.dcol'
     #if not os.path.isfile(speculative_palette_path):
-    run_wallbash()
 
     # def extract_color(group, color_class):
 
     # open palette file and save data to palette_data
-    palette_path = get_wallpaper_path() + '.dcol'
+    palette_path = wallpaper_path + '.dcol'
     with open(palette_path,'r', encoding='utf-8') as file:
         palette_data = file.readlines()
 
@@ -144,8 +141,8 @@ def get_color_codes_dict_rgba(opacity):
     return color_codes_dict
 
 
-def get_color_mode():
-    dcol_path = get_wallpaper_path() + ".dcol"
+def get_color_mode(wallpaper_path):
+    dcol_path = wallpaper_path + ".dcol"
     color_mode = linecache.getline(dcol_path,1).lstrip("dcol_mode=").lstrip("\"")
     color_mode = color_mode.rstrip("\"\n")
     return color_mode

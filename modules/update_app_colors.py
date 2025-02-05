@@ -1,5 +1,6 @@
 import json
 import os
+import subprocess
 from . import extract_colors as e
 from . import replace_text as r
 
@@ -14,8 +15,13 @@ elif os.path.isfile(home_dir + "/.var/app/com.visualstudio.code/config/Code/User
 else:
     print("No VS code settings file found.")
 
-# get alacritty config file path
-alacritty_config_file = os.getcwd() + "/.alacritty.toml"
+def set_gtk_theme(color_mode):
+    if color_mode == "light":
+        subprocess.call("gsettings set org.gnome.desktop.interface color-scheme prefer-light", shell=True)
+    elif color_mode == "dark":
+        subprocess.call("gsettings set org.gnome.desktop.interface color-scheme prefer-dark", shell=True)
+    else:
+        print("color_mode unsupported.")
 
 # update json properties
 def update_json_property(settings_file, property_group, property_name, property_value):
@@ -48,8 +54,8 @@ vscode_colors = {"foreground":"text1",
                  "panel.background":"primary1",
                  "statusBar.background" : "accent1_1"}
 
-def update_vscode_colors(color_mode):
-    color_palette_dict = e.get_color_codes_dict_rgb()
+def update_vscode_colors(color_mode, wallpaper_path):
+    color_palette_dict = e.get_color_codes_dict_rgb(wallpaper_path)
     for key in vscode_colors:
         update_json_property(vscode_settings_file, "workbench.colorCustomizations", key, "#" + color_palette_dict[vscode_colors[key]])
     if color_mode == "light":
@@ -61,7 +67,7 @@ alacritty_color_map = {
     "background" : "primary1"
 }
 
-def update_colors_generic(color_mode, color_format, last_char, file, color_map):
+def update_colors_generic(color_mode, color_format, last_char, file, color_map, wallpaper_path):
     """update color codes in any file. Color code needs to be at the end of line without comments.
 
     Args:
@@ -72,9 +78,9 @@ def update_colors_generic(color_mode, color_format, last_char, file, color_map):
         color_map (dict): map colors to color palette (config color name : palette color name)
     """
     if color_format == "rgb":
-        color_palette_dict = e.get_color_codes_dict_rgb()
+        color_palette_dict = e.get_color_codes_dict_rgb(wallpaper_path)
     elif color_format == "rgba":
-        color_palette_dict = e.get_color_codes_dict_rgba()
+        color_palette_dict = e.get_color_codes_dict_rgba(wallpaper_path)
     else:
         print("wrong color format specified.")
 
@@ -92,15 +98,18 @@ def update_colors_generic(color_mode, color_format, last_char, file, color_map):
         f.write(data_str)
     f.close() 
 
-def update_alacritty_colors(color_mode):
-    color_palette_dict = e.get_color_codes_dict_rgb()
+def update_alacritty_colors(color_mode, wallpaper_path):
+    # get alacritty config file path
+    alacritty_config_file = os.getcwd() + "/.alacritty.toml"
+
+    color_palette_dict = e.get_color_codes_dict_rgb(wallpaper_path)
     with open(alacritty_config_file, "r", encoding='utf-8') as file:
         data = file.readlines()
     file.close()
 
     for key in alacritty_color_map:
         data_list = r.replace_color(data, key, color_palette_dict[alacritty_color_map[key]], "rgb", "\"")
-        data_str = ""
+    data_str = ""
     for word in data_list:
         data_str = data_str + word
 
@@ -123,8 +132,9 @@ rofi_color_map = {
 }
 
 
-def update_rofi_colors(color_mode):
-    color_palette_dict = e.get_color_codes_dict_rgb() # has to be changed when merged with refactored version, doesn't it?
+def update_rofi_colors(color_mode, wallpaper_path):
+
+    color_palette_dict = e.get_color_codes_dict_rgb(wallpaper_path) # has to be changed when merged with refactored version, doesn't it?
     opacity_hex = "aa"
 
     with open(rofi_color_file,"r", encoding='utf-8') as file:
@@ -134,10 +144,9 @@ def update_rofi_colors(color_mode):
     for key in rofi_color_map:
         if "transparent" in key:
             data_list = r.replace_color(data, key, color_palette_dict[rofi_color_map[key]], "rgb", opacity_hex + ";", ignoreLinesWithAt=True)
-            data_str = ""
         else:
             data_list = r.replace_color(data, key, color_palette_dict[rofi_color_map[key]], "rgb", ";", ignoreLinesWithAt=True)
-            data_str = ""
+    data_str = ""
     for word in data_list:
         data_str = data_str + word
 

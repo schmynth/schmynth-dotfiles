@@ -26,9 +26,12 @@ def replace_color(file_data, color_name, replacement_color, mode, last_char, ign
         file_data (list): file data in list
         color_name (str): name of the color as defined in file. Has to match.
         replacement_color (str): color code of replacement color, 6 digits, no #
+        mode (str): either "light" or "dark"
+        last_char (str): determines how the code/line is terminated.
+        ignoreLinesWithAt (bool): ignore lines containing an @ (default:False)
 
     Returns:
-        list: complete update file as data list
+        list: complete updated file as data list
     """
 
     current_line_number = 1

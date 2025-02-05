@@ -1,0 +1,42 @@
+@import "color_palette.css";
+
+window#osd {
+  padding: 12px 10px;
+  border-radius: 20px;
+  border: solid;
+  border-width: 1px;
+  border-color: @accent1_1;
+  background: @accent4_1;
+}
+  #container {
+    margin: 6px;
+  }
+
+  image, label {
+    color: @text1;
+  }
+
+  progressbar:disabled,
+  image:disabled {
+    opacity: 0.5;
+  }
+
+  progressbar {
+    min-height: 6px;
+    border-radius: 999px;
+    background: @text1;    
+	border: none;
+  }
+  trough {
+    min-height: inherit;
+    border-radius: inherit;
+    border: none;
+    background: @accent4_1;
+  }
+  progress {
+    min-height: 8px;
+    border-radius: inherit;
+    border: none;
+    background: @theme_fg_color;
+  }
+}

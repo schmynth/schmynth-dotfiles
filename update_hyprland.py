@@ -4,31 +4,28 @@ import modules.extract_colors as e
 import subprocess
 import os
 
+# define/get paths
 dotfiles_rootpath = os.path.dirname(os.path.realpath(__file__))
 palette_path = dotfiles_rootpath + "/.config/"
 restart_waybar_script_path = dotfiles_rootpath + "/.scripts/restart_waybar.sh"
+restart_swayosd_script_path = dotfiles_rootpath + "/.scripts/restart_swayosd.sh"
+wallpaper_path = e.get_wallpaper_path()
 
-def restart_waybar():
-    subprocess.call(restart_waybar_script_path, shell=True)
+def run_bash_script(script_path):
+    subprocess.call(script_path, shell=True)
 
-def set_gtk_theme(color_mode):
-    if color_mode == "light":
-        subprocess.call("gsettings set org.gnome.desktop.interface color-scheme prefer-light", shell=True)
-    elif color_mode == "dark":
-        subprocess.call("gsettings set org.gnome.desktop.interface color-scheme prefer-dark", shell=True)
-    else:
-        print("color_mode unsupported.")
+e.run_wallbash(wallpaper_path)
 
 # get color info from new wallpaper
-up.update_palette(palette_path)
-color_mode = e.get_color_mode()
-set_gtk_theme(color_mode)
+up.update_palette(palette_path, wallpaper_path)
+color_mode = e.get_color_mode(wallpaper_path)
+
+uac.set_gtk_theme(color_mode)
 
 # update hyprland and applications
-restart_waybar()
+run_bash_script(restart_waybar_script_path)
+run_bash_script(restart_swayosd_script_path)
 
-
-uac.update_alacritty_colors(color_mode)
-uac.update_vscode_colors(color_mode)
-uac.update_alacritty_colors(color_mode)
-uac.update_rofi_colors(color_mode)
+uac.update_rofi_colors(color_mode, wallpaper_path)
+uac.update_alacritty_colors(color_mode, wallpaper_path)
+uac.update_vscode_colors(color_mode, wallpaper_path)
