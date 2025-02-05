@@ -8,10 +8,11 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,window,run,filebrowser,rofi-power-menu";
+	modi:                       "drun,window,calc,filebrowser,rofi-power-menu";
     show-icons:                 false;
     display-drun:               "  Apps";
     display-run:                " Run";
+	display-calc:				"󰪚 Calc";
     display-filebrowser:        " Files";
     display-window:             " Windows";
 /* power string has to be set from inside power menu script */
