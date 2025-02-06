@@ -18,7 +18,7 @@ def remove_color_code(line, mode):
     else:
         return "wrong color format specified."
 
-def replace_color(file_data, color_name, replacement_color, mode, last_char, ignoreLinesWithAt=False):
+def replace_color(file_data, color_name, replacement_color, mode, last_char, ignoreLinesWithAt=False, rgb_enclosed=False):
     """replaces named color code in data list (read file) with code provided
     as argument. Searches name in line thus independent of data structure.
 
@@ -33,18 +33,24 @@ def replace_color(file_data, color_name, replacement_color, mode, last_char, ign
     Returns:
         list: complete updated file as data list
     """
+    if rgb_enclosed:
+        declaration_string = "rgba("
+        closing_string = ")"
+    else:
+        declaration_string = ""
+        closing_string =  ""
 
     current_line_number = 1
     for line in file_data:
         if ignoreLinesWithAt:
             if color_name in line and "@" not in line:  # don't overwrite variables
                 stripped_line = remove_color_code(line, mode)
-                file_data[current_line_number-1] = stripped_line + replacement_color + last_char + '\n'
+                file_data[current_line_number-1] = stripped_line + declaration_string + replacement_color + closing_string + last_char + '\n'
             current_line_number += 1
         else:
             if color_name in line:  
                 stripped_line = remove_color_code(line, mode)
-                file_data[current_line_number-1] = stripped_line + replacement_color + last_char + '\n'
+                file_data[current_line_number-1] = stripped_line + declaration_string + replacement_color + closing_string + last_char + '\n'
             current_line_number += 1
             
     return file_data

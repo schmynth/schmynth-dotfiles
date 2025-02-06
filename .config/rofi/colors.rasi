@@ -1,11 +1,11 @@
 * {
-    foreground:  #CCFBFF;
+    foreground:  #CCEFFF;
     backlight:   #ee03777F;
     background-color:  transparent;
-	list-background-transparent: #578A8Faa;
-	border-color: #294E52;
+	list-background-transparent: #577D8Faa;
+	border-color: #294552;
 
-	selection-transparent: #8F7857aa;
+	selection-transparent: #8F8157aa;
 	text0: #FFFFFF;
     text2: #FFFFFF;
     dark: #1c1c1c;
@@ -44,7 +44,7 @@
     lightwhite:     #ddccbb;
     //
     // Bold, Italic, Underline
-    highlight:     underline bold #CCFBFF;
+    highlight:     underline bold #CCEFFF;
 
     transparent: rgba(2,0,0,0);
     font: "JetBrainsMono Nerd Font 9";
