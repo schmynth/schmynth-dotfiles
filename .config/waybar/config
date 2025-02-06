@@ -136,23 +136,24 @@
      },
  
      // Harddisc space used
-     "disk": {
-         "interval": 30,
-         "format": "  {percentage_used}% /home ",
-         "path": "/home",
-         "on-click": "alacritty -e htop"
-     },
+    "disk": {
+        "interval": 30,
+        "format": "  {percentage_used}% /home ",
+        "path": "/home",
+        "on-click": "alacritty -e htop"
+    },
  
-     "hyprland/language": {
-         "format": "   {short}"
-     },
+    "hyprland/language": {
+        "format": "   {short}"
+    },
 
-     // Power Menu                                                                              
-     "custom/exit": {                                                                           
-         "format": "    ",                                                                         
-         "tooltip-format": "Powermenu",                                                         
-         "on-click": "wlogout --protocol layer-shell -b 5",                                                 "tooltip": false                                      
-     },                                                                                         
+    // Power Menu
+    "custom/exit": {                                                                           
+        "format": "    ",                                                                         
+        "tooltip-format": "Powermenu",                                                         
+        "on-click": "rofi -show rofi-power-menu -show-icons",
+        "tooltip": false                                      
+    },                                                                                         
 
     "network": {
         	"tooltip": true,

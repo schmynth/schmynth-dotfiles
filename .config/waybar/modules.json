@@ -41,7 +41,7 @@
     "custom/exit": {
         "format": "",
         "tooltip-format": "Powermenu",
-        "on-click": "wlogout -b 4",
+        "on-click": "rofi -show rofi-power-menu -show-icons",
         "tooltip": false
     },
 
