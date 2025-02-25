@@ -39,10 +39,11 @@ ln -sf $SCRIPT_PATH/.alacritty.toml /home/$USER/.alacritty.toml
 echo "linking hyprland config file..."
 mkdir -p /home/$USER/.config/hypr
 ln -sf $SCRIPT_PATH/.config/hypr/hyprland.conf /home/$USER/.config/hypr/hyprland.conf
+ln -sf $SCRIPT_PATH/.config/hypr/windowrules.conf /home/$USER/.config/hypr/windowrules.conf
 ln -sf $SCRIPT_PATH/.config/hypr/adaptive_theme.conf /home/$USER/.config/hypr/adaptive_theme.conf
 
-echo "linking hyprlock config file..."
-ln -sf $SCRIPT_PATH/.config/hypr/hyprlock.conf /home/$USER/.config/hypr/hyprlock.conf
+#echo "linking hyprlock config file..."
+#ln -sf $SCRIPT_PATH/.config/hypr/hyprlock.conf /home/$USER/.config/hypr/hyprlock.conf
 
 echo "linking waybar config files..."
 mkdir -p /home/$USER/.config/waybar
@@ -94,3 +95,6 @@ ln -sf $SCRIPT_PATH/.scripts /home/$USER/
 
 echo "linking wlogout config files..."
 ln -sf $SCRIPT_PATH/.config/wlogout /home/$USER/.config/
+
+echo "linking Kvantum config and theme files..."
+ln -sf $SCRIPT_PATH/.config/Kvantum /home/$USER/.config/

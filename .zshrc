@@ -77,7 +77,7 @@ bindkey '^H' backward-kill-word                                 # delete previou
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 # ls -la with just Alt+l (after killing the line)
-bindkey -s '\el' '^uls -la --color=auto\n'
+bindkey -v
 
 # History
 HISTSIZE=5000
@@ -104,7 +104,9 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases:
 alias ..="cd .."
+alias l="ls -la --color=auto"
 
 # Environment Variables:
 export VST_PATH=/home/sebastian/.vst
 export VST3_Path=/home/sebastian/.vst3
+export PATH="${PATH}:/home/sebastian/.local/lib"

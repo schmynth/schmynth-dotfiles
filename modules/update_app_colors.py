@@ -153,3 +153,11 @@ def update_rofi_colors(color_mode, wallpaper_path):
     with open(rofi_color_file,"w", encoding='utf-8') as file:
         file.write(data_str)
     file.close()
+
+
+kvantum_color_map = {
+    "window.color" : "accent4_1", # general window color
+    "frame.element" : "accent4_1", # menubar background color
+    "text.normal.color" : "text1",
+    "text.focus.color" : "text2"
+}

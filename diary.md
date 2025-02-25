@@ -33,6 +33,7 @@
   - [plugins](#plugins)
     - [ale](#ale)
 - [Hyprland](#hyprland)
+  - [mime dolphin](#mime-dolphin)
   - [wallpapers:](#wallpapers)
   - [gtk dark theme](#gtk-dark-theme)
   - [launcher](#launcher)
@@ -323,6 +324,13 @@ ale ist ein Plugin für Syntax-Highlighting (Farben etc.). Zum Installieren:
 To list all open windows (to find out the name or class):
     
     hyprctl clients
+
+### mime dolphin
+
+If dolphin can not open any file:
+
+    cp /etc/xdg/menus/gnome-applications.menu applications.menu
+    XDG_MENU_PREFIX=arch- kbuildsycoca6
 
 ### wallpapers:
 
